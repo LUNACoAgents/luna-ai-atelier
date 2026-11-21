@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUNA AI ATELIER｜さいたま・大宮の小さなお店向けホームページ制作</title>
+<meta name="description" content="さいたま市・大宮周辺の小さなお店・個人事業者向けに、ホームページ制作（コミコミ10万円・税込）・リール動画・チラシ制作を行うLUNA AI ATELIER。サーバー代のかからない静的サイトで、セキュリティとSEOの基本対策を標準で入れています。">
+<!-- プレオープン中は検索に出さない。公開OKになったらこの1行を消す -->
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://lunacoagents.github.io/luna-ai-atelier/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LUNA AI ATELIER">
+<meta property="og:title" content="LUNA AI ATELIER｜小さなお店のホームページ制作">
+<meta property="og:description" content="ホームページ制作コミコミ10万円（税込）。リール動画・チラシ制作も。さいたま市・大宮周辺。">
+<meta property="og:url" content="https://lunacoagents.github.io/luna-ai-atelier/">
+<meta property="og:image" content="https://lunacoagents.github.io/luna-ai-atelier/assets/img/ogp.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b1a2b'/%3E%3Cpath d='M20 6a10 10 0 1 0 7 15A8 8 0 0 1 20 6' fill='%23e4c48a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"LUNA AI ATELIER","url":"https://lunacoagents.github.io/luna-ai-atelier/","description":"さいたま市・大宮周辺の小さなお店・個人事業者向けのホームページ制作、リール動画制作、チラシ制作。","email":"luna.ai.atelier@gmail.com","areaServed":["さいたま市","大宮","東大宮"],"priceRange":"¥15,000〜¥100,000",
+"makesOffer":[{"@type":"Offer","name":"ホームページ制作パッケージ","price":"100000","priceCurrency":"JPY"},{"@type":"Offer","name":"保守スタンダード（月額）","price":"10000","priceCurrency":"JPY"}]}
+</script>
+<style>
+  /* hero */
+  .hero{background:radial-gradient(1200px 600px at 85% 10%,#1f4268 0,transparent 60%),linear-gradient(160deg,#0b1a2b,#10243b);color:#fff;overflow:hidden}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-top:72px;padding-bottom:80px}
+  .badge{display:inline-block;border:1px solid var(--gold2);color:var(--gold2);border-radius:999px;padding:3px 16px;font-size:12.5px;letter-spacing:.16em;margin-bottom:20px}
+  .hero h1{font-size:42px;line-height:1.5;font-weight:800;letter-spacing:.02em}
+  .hero h1 .g{background:linear-gradient(92deg,var(--gold2),#fff2cf 55%,var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero .sub{margin-top:18px;font-size:16.5px;color:#d7e2ee;max-width:560px}
+  .hero-btns{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
+  .stats{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:12px 34px;margin-top:40px}
+  .stat .num{font-size:28px;font-weight:800;color:var(--gold2);line-height:1.3}
+  .stat .num small{font-size:14px;margin-left:2px}
+  .stat .lbl{font-size:12.5px;color:#a9bbcd}
+  .devices{position:relative;min-height:380px}
+  .laptop{position:absolute;left:0;top:10px;width:92%;}
+  .laptop .scr{border:10px solid #1b2734;border-bottom-width:14px;border-radius:12px 12px 0 0;overflow:hidden;background:#fff;box-shadow:0 30px 60px rgba(0,0,0,.45);aspect-ratio:16/10}
+  .laptop .scr img{width:100%;height:100%;object-fit:cover;object-position:top}
+  .laptop .base{height:12px;background:linear-gradient(#c8d0d9,#8e99a6);border-radius:0 0 14px 14px;margin:0 -5%}
+  .phone{position:absolute;right:0;bottom:0;width:30%;border:7px solid #111a24;border-radius:24px;overflow:hidden;background:#fff;box-shadow:0 26px 50px rgba(0,0,0,.5);aspect-ratio:9/19}
+  .phone img{width:100%;height:100%;object-fit:cover;object-position:top}
+  /* problems */
+  ul.checks{list-style:none;max-width:680px;margin:0 auto;display:grid;gap:12px}
+  ul.checks li{background:var(--card);border-radius:12px;padding:15px 20px;box-shadow:var(--shadow-s);border-left:4px solid var(--gold)}
+  ul.checks li b{color:var(--navy2)}
+  /* works */
+  .works{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .work{background:#fff;border-radius:18px;overflow:hidden;box-shadow:var(--shadow-s);text-decoration:none;color:var(--text);transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column}
+  .work:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .work .ph{aspect-ratio:16/10;overflow:hidden;border-bottom:1px solid var(--line)}
+  .work .ph img{width:100%;height:100%;object-fit:cover;object-position:top}
+  .work .tx{padding:18px 20px 20px}
+  .work .ind{font-size:12px;color:var(--gold);font-weight:700;letter-spacing:.14em}
+  .work h3{font-size:18px;color:var(--navy);margin:2px 0 4px}
+  .work p{font-size:14px;color:var(--muted)}
+  .work .go{margin-top:10px;font-size:13.5px;font-weight:700;color:var(--navy2)}
+  .works-note{text-align:center;font-size:13.5px;color:var(--muted);margin-top:20px}
+  /* services */
+  .svcs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .svc{background:#fff;border-radius:18px;padding:30px 24px;box-shadow:var(--shadow-s)}
+  .svc .ic{width:54px;height:54px;border-radius:14px;background:linear-gradient(140deg,var(--navy),var(--navy2));display:grid;place-items:center;margin-bottom:14px}
+  .svc .ic svg{width:28px;height:28px;stroke:var(--gold2);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .svc h3{font-size:19px;color:var(--navy)}
+  .svc p{font-size:14.5px;color:var(--muted);margin-top:6px}
+  .svc .price{font-size:21px;font-weight:800;color:var(--gold);margin-top:14px}
+  .svc .price small{font-size:12.5px;color:var(--muted);font-weight:500}
+  /* why + maker */
+  .why{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .why div{background:#fff;border-radius:18px;padding:28px 24px;box-shadow:var(--shadow-s);position:relative;overflow:hidden}
+  .why div::before{content:attr(data-no);position:absolute;right:12px;top:-14px;font-size:90px;font-weight:800;color:rgba(185,141,79,.12);line-height:1}
+  .why h3{font-size:18px;color:var(--navy2);margin-bottom:6px;position:relative}
+  .why p{font-size:14.5px;position:relative}
+  .maker{margin-top:28px;display:grid;grid-template-columns:150px 1fr;gap:30px;align-items:center;background:linear-gradient(140deg,var(--navy),var(--navy2));color:#e4ecf4;border-radius:22px;padding:34px;box-shadow:var(--shadow)}
+  .maker .av{width:140px;height:140px;border-radius:50%;background:radial-gradient(circle at 50% 50%,#132c47 0 60%,transparent 61%),conic-gradient(from 200deg,var(--gold),var(--gold2),var(--gold));display:grid;place-items:center}
+  .maker .av svg{width:64px}
+  .maker h3{color:#fff;font-size:19px}
+  .maker h3 small{display:block;color:var(--gold2);font-size:12px;letter-spacing:.24em;font-weight:700}
+  .maker p{font-size:14.5px;margin-top:8px}
+  .maker ul{list-style:none;margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
+  .maker li{font-size:12.5px;border:1px solid rgba(228,196,138,.45);color:var(--gold2);border-radius:999px;padding:2px 12px}
+  /* sec-seo */
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .two div{background:#fff;border-radius:18px;padding:28px 26px;box-shadow:var(--shadow-s)}
+  .two h3{font-size:18px;color:var(--navy2);margin-bottom:6px}
+  .two p{font-size:14.5px}
+  .two a.more{display:inline-block;margin-top:10px;font-weight:700;font-size:14px}
+  /* price */
+  .main-plan{display:grid;grid-template-columns:1fr 1fr;gap:0;background:#fff;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);max-width:960px;margin:0 auto}
+  .main-plan .l{background:linear-gradient(160deg,var(--navy),var(--navy2));color:#fff;padding:36px 34px}
+  .main-plan .l .tag2{display:inline-block;background:var(--gold);color:#fff;font-size:12px;font-weight:700;letter-spacing:.12em;padding:2px 14px;border-radius:999px}
+  .main-plan .l h3{font-size:21px;margin-top:12px}
+  .main-plan .amt{font-size:44px;font-weight:800;color:var(--gold2);line-height:1.3;margin-top:6px}
+  .main-plan .amt small{font-size:15px;color:#c9d6e3;font-weight:500}
+  .main-plan .l p{font-size:14px;color:#c9d6e3;margin-top:8px}
+  .main-plan .r{padding:32px 34px}
+  .main-plan ul{list-style:none;display:grid;gap:9px;font-size:15px}
+  .main-plan li::before{content:"✓";color:var(--gold);font-weight:800;margin-right:8px}
+  .subplans{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:960px;margin:24px auto 0}
+  .sp{background:#fff;border-radius:18px;padding:26px 26px;box-shadow:var(--shadow-s)}
+  .sp h3{font-size:17px;color:var(--navy)}
+  .sp .row{display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);padding:10px 0;font-size:14.5px}
+  .sp .row:last-child{border:none}
+  .sp .row b{color:var(--navy2);white-space:nowrap}
+  .sp .row span small{display:block;color:var(--muted);font-size:12.5px}
+  .sp .rec{font-size:11px;background:var(--gold);color:#fff;border-radius:999px;padding:1px 8px;margin-left:6px;vertical-align:2px}
+  .tax{max-width:960px;margin:22px auto 0;font-size:13.5px;color:var(--muted);text-align:center}
+  /* flow */
+  .steps{max-width:700px;margin:0 auto;counter-reset:step;position:relative}
+  .steps::before{content:"";position:absolute;left:19px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--gold2),rgba(185,141,79,.15))}
+  .steps li{list-style:none;position:relative;padding:0 0 24px 58px}
+  .steps li::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;background:linear-gradient(140deg,var(--gold),#cfa25c);color:#fff;text-align:center;line-height:40px;font-weight:800}
+  .steps b{font-size:17px;color:var(--navy2)}
+  /* faq */
+  details{background:#fff;border-radius:12px;padding:16px 20px;margin:0 auto 12px;max-width:780px;box-shadow:var(--shadow-s)}
+  summary{font-weight:700;cursor:pointer;color:var(--navy2)}
+  details p{margin-top:8px;color:var(--muted);font-size:15px}
+  /* column teaser */
+  .more-col{text-align:center;margin-top:26px}
+  /* contact */
+  .contact{background:linear-gradient(140deg,var(--navy),var(--navy2));color:#fff;border-radius:26px;padding:56px 28px;text-align:center;box-shadow:var(--shadow)}
+  .contact h2{font-size:28px}
+  .contact p{color:#d3deea;margin:10px auto 0;max-width:560px}
+  .contact .btn{margin-top:26px}
+  .contact .mail{margin-top:12px;font-size:14px;color:#b9c8d8}
+  .contact .mail b{color:var(--gold2);user-select:all}
+  .tmpl{max-width:520px;margin:24px auto 0;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:16px 20px;text-align:left;font-size:13.5px;color:#cfdbe8}
+  .tmpl b{color:#fff}
+  @media (max-width:900px){
+    .hero .wrap{grid-template-columns:1fr;padding-top:44px;padding-bottom:56px}
+    .devices{min-height:0;height:min(68vw,380px);margin-top:10px}
+    .works,.svcs,.why{grid-template-columns:1fr}
+    .two,.main-plan,.subplans{grid-template-columns:1fr}
+  }
+  @media (max-width:600px){
+    .hero h1{font-size:28px}
+    .hero .sub{font-size:15px}
+    .stats{grid-template-columns:repeat(3,1fr);gap:10px}
+    .stat .num{font-size:21px}.stat .num small{font-size:12px}
+    .stat .lbl{font-size:11.5px}
+    .hero-btns .btn{flex:1;padding:14px 16px}
+    .maker{grid-template-columns:1fr;text-align:center;padding:28px 22px}
+    .maker .av{margin:0 auto;width:110px;height:110px}
+    .maker ul{justify-content:center}
+    .maker p{text-align:left}
+    .main-plan .l,.main-plan .r{padding:28px 24px}
+    .main-plan .amt{font-size:38px}
+    .contact h2{font-size:22px}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="./">LUNA AI <span>ATELIER</span></a>
+    <ul>
+      <li><a href="#works">制作サンプル</a></li>
+      <li><a href="#price">料金</a></li>
+      <li><a href="#maker">つくる人</a></li>
+      <li class="keep"><a href="column/">コラム</a></li>
+      <li class="keep"><a class="cta" href="#contact">無料相談</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div>
+      <span class="badge">さいたま・大宮の小さなお店へ</span>
+      <h1>小さなお店の<br>「作りたい」を、<br><span class="g">まるごとお手伝いします。</span></h1>
+      <p class="sub">ホームページ・リール動画・チラシ。制作会社に頼むほどじゃない、でも自分で作る時間もない。そんな小さな事業者さんのための制作サービスです。</p>
+      <div class="hero-btns">
+        <a class="btn btn-gold" href="#contact">無料で相談する</a>
+        <a class="btn btn-ghost" href="#works">サンプルを見る</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="num">10<small>万円</small></div><div class="lbl">ホームページ制作<br>コミコミ・税込</div></div>
+        <div class="stat"><div class="num">0<small>円</small></div><div class="lbl">毎月の<br>サーバー代</div></div>
+        <div class="stat"><div class="num">1<small>万円/月</small></div><div class="lbl">公開後の更新も<br>おまかせ</div></div>
+      </div>
+    </div>
+    <div class="devices" aria-hidden="true">
+      <div class="laptop"><div class="scr"><img src="assets/img/bankin-pc.jpg" alt="" width="1280" height="800"></div><div class="base"></div></div>
+      <div class="phone"><img src="assets/img/salon-sp.jpg" alt="" width="390" height="844"></div>
+    </div>
+  </div>
+</section>
+
+<section id="problems">
+  <div class="wrap">
+    <p class="kicker">PROBLEMS</p>
+    <h2 class="sec">こんなお悩みありませんか</h2>
+    <p class="lead">「作りたい気持ちはあるのに、時間と手間が足りない」。そのお悩み、まとめて引き受けます。</p>
+    <ul class="checks">
+      <li>ホームページが<b>ない・古いまま</b>で、スマホで見づらい</li>
+      <li>Googleマップで探されても、<b>お店の情報がちゃんと出てこない</b></li>
+      <li>Instagramを頑張りたいけど、<b>動画編集の時間がない</b></li>
+      <li>制作会社に見積もりを取ったら<b>高くて諦めた</b></li>
+    </ul>
+  </div>
+</section>
+
+<section id="works">
+  <div class="wrap">
+    <p class="kicker">SAMPLES</p>
+    <h2 class="sec">制作サンプル</h2>
+    <p class="lead">業種ごとに、実際にお作りする内容のサンプルを用意しました。スマホでも開いてみてください。</p>
+    <div class="works">
+      <a class="work" href="works/sekkotsu/">
+        <div class="ph"><img src="assets/img/sekkotsu-pc.jpg" alt="こもれび整骨院のサンプルサイト" width="1280" height="800" loading="lazy"></div>
+        <div class="tx"><p class="ind">整骨院・治療院</p><h3>こもれび整骨院</h3><p>やさしい色と丸い文字で、初めての人の不安をほどくデザイン。電話とWEB予約を画面下に固定。</p><p class="go">サンプルを見る →</p></div>
+      </a>
+      <a class="work" href="works/salon/">
+        <div class="ph"><img src="assets/img/salon-pc.jpg" alt="hair atelier NOAのサンプルサイト" width="1280" height="800" loading="lazy"></div>
+        <div class="tx"><p class="ind">美容室・サロン</p><h3>hair atelier NOA</h3><p>余白と明朝体で、プライベートサロンの空気感を伝えるデザイン。Instagramや予約サービスと連携。</p><p class="go">サンプルを見る →</p></div>
+      </a>
+      <a class="work" href="works/bankin/">
+        <div class="ph"><img src="assets/img/bankin-pc.jpg" alt="あさひ屋根板金のサンプルサイト" width="1280" height="800" loading="lazy"></div>
+        <div class="tx"><p class="ind">屋根・外壁・リフォーム</p><h3>あさひ屋根板金</h3><p>「無料点検」と電話番号を大きく。施工事例に費用と工期を載せて、問い合わせにつなげる構成。</p><p class="go">サンプルを見る →</p></div>
+      </a>
+    </div>
+    <p class="works-note">※お店・住所・料金はすべて架空です。ホームページ制作パッケージ（10万円）で、この内容までお作りします。</p>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <p class="kicker">SERVICES</p>
+    <h2 class="sec">できること</h2>
+    <p class="lead">ホームページを入口に、SNSとチラシまで同じ雰囲気でそろえられます。</p>
+    <div class="svcs">
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <h3>ホームページ制作</h3>
+        <p>スマホで見やすく、Googleに正しく伝わるホームページ。予約や通販が必要なら、専門サービスを組み合わせます。</p>
+        <p class="price">100,000円<small>（税込・コミコミ）</small></p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10.5 9.5v5l4-2.5z"/></svg></div>
+        <h3>リール動画制作</h3>
+        <p>お店の魅力を30秒に。撮った素材を送ってもらえれば、カット・テロップ・BGMまで仕上げます。</p>
+        <p class="price">1本 8,000円<small>／月4本 30,000円</small></p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5M9 13h8M9 17h6"/></svg></div>
+        <h3>チラシ制作</h3>
+        <p>配る・置く・ポスティング。目的に合わせたデザインから、印刷にそのまま使えるデータまで。</p>
+        <p class="price">A4片面 15,000円<small>〜</small></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <p class="kicker">WHY US</p>
+    <h2 class="sec">選ばれる理由</h2>
+    <div class="why">
+      <div data-no="1"><h3>経営の目線で作ります</h3><p>普段は小さな事業者さんの数字を見る仕事をしています。「見た目がいい」だけでなく、「問い合わせや来店につながるか」で考えます。</p></div>
+      <div data-no="2"><h3>作って終わりにしません</h3><p>月額の保守プランで、文章や写真の差し替えなど公開後の更新もおまかせいただけます。回数の上限を決めた、分かりやすいプラン制です。</p></div>
+      <div data-no="3"><h3>いろんな業種を知っています</h3><p>通常の法人からNPO法人・一般社団法人まで、さまざまな組織の仕事の進め方を見てきました。リフォーム・外壁のような現場系のお仕事も得意です。</p></div>
+    </div>
+
+    <div class="maker" id="maker">
+      <div class="av" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M20 6a10 10 0 1 0 7 15A8 8 0 0 1 20 6" fill="#e4c48a"/></svg></div>
+      <div>
+        <h3><small>ABOUT</small>つくる人について</h3>
+        <p>本業では、小さな会社やお店、NPO法人などの数字を見る仕事をしています。その中で「いいお店なのに、ホームページが古くて伝わっていない」場面を何度も見てきました。AIを道具として使いこなすことで、制作会社より手の届く価格で、しっかりしたサイトをお届けします。</p>
+        <ul><li>Webマンガサイトを企画・制作・運営</li><li>リフォーム会社向けの現場管理アプリを開発</li><li>勤務先の許可を得て活動しています</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="security-seo">
+  <div class="wrap">
+    <p class="kicker">SECURITY &amp; SEO</p>
+    <h2 class="sec">安心して長く使える作り</h2>
+    <div class="two">
+      <div>
+        <h3>改ざんされにくい作り</h3>
+        <p>サーバー側で動く部品（PHPやデータベース）を持たない静的なサイトで作ります。乗っ取りの入口になりやすい部品がそもそも無く、通信はHTTPSで暗号化。お問い合わせの個人情報もサイト内には残しません。</p>
+        <a class="more" href="column/php-security.html">→ なぜ静的サイトだと安全なの？</a>
+      </div>
+      <div>
+        <h3>検索で見つけてもらう作り</h3>
+        <p>ページごとのタイトルと説明文、Googleに事業情報を伝える構造化データ、スマホで速く開く軽い作りを標準で入れます。Googleマップ（ビジネスプロフィール）の整え方もお手伝いします。</p>
+        <a class="more" href="column/seo-now-and-then.html">→ 今のSEO対策で大事なこと</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="price">
+  <div class="wrap">
+    <p class="kicker">PRICE</p>
+    <h2 class="sec">料金</h2>
+    <p class="lead">基本は「制作（最初だけ）＋保守（月額・任意）」の組み合わせです。見積りは無料です。</p>
+
+    <div class="main-plan">
+      <div class="l">
+        <span class="tag2">いちばん人気</span>
+        <h3>ホームページ制作パッケージ</h3>
+        <div class="amt">100,000円<small>（税込）</small></div>
+        <p>制作サンプルと同じ内容・品質のサイトを、公開まで一式でお作りします。追加費用がかからない「コミコミ」価格です。</p>
+      </div>
+      <div class="r">
+        <ul>
+          <li>スマホ・パソコン両対応のデザイン</li>
+          <li>メニュー・料金・アクセス・よくある質問など</li>
+          <li>地図・SNS・電話タップ・予約への導線</li>
+          <li>セキュリティとSEOの基本対策</li>
+          <li>原稿づくりのお手伝い</li>
+          <li>公開設定まで（修正は公開前2回まで無料）</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="subplans">
+      <div class="sp">
+        <h3>公開後の保守（月額・任意）</h3>
+        <div class="row"><span>保守スタンダード<span class="rec">おすすめ</span><small>公開維持・トラブル対応＋軽い更新 月2回まで</small></span><b>月 10,000円</b></div>
+        <div class="row"><span>保守ライト<small>公開維持・トラブル対応のみ</small></span><b>月 5,000円</b></div>
+        <div class="row"><span>追加の更新<small>上限を超えた分</small></span><b>3,000円〜／回</b></div>
+      </div>
+      <div class="sp">
+        <h3>そのほかのメニュー</h3>
+        <div class="row"><span>ホームページ ライト<small>1ページだけの名刺代わりサイト</small></span><b>50,000円〜</b></div>
+        <div class="row"><span>ページ追加</span><b>10,000円〜</b></div>
+        <div class="row"><span>リール動画<small>編集のみ／月4本パック</small></span><b>8,000円／30,000円</b></div>
+        <div class="row"><span>チラシ A4<small>片面／両面・印刷用データ納品</small></span><b>15,000円〜／25,000円〜</b></div>
+        <div class="row"><span>開業スタートセット<small>HPライト＋チラシ片面＋リール2本</small></span><b>75,000円〜</b></div>
+      </div>
+    </div>
+    <p class="tax">表示価格はすべて税込です。現在は免税事業者のため消費税はいただいておりませんが、インボイス登録（適格請求書発行事業者）となった際には、消費税を別途申し受けます。独自ドメインの取得・設定は実費＋5,000円です。</p>
+  </div>
+</section>
+
+<section id="flow">
+  <div class="wrap">
+    <p class="kicker">FLOW</p>
+    <h2 class="sec">ご依頼の流れ</h2>
+    <ol class="steps">
+      <li><b>ご相談</b><br>メールで「こんなの作れる？」だけでも大丈夫です。</li>
+      <li><b>ヒアリング</b><br>30分ほど・オンライン可。作りたいものと目的を聞かせてください。</li>
+      <li><b>お見積り（無料）</b><br>金額と作業の範囲を先にはっきりさせます。お支払いは着手時と納品時の半分ずつです。</li>
+      <li><b>制作・確認</b><br>途中経過を見ながら進めます。修正はプラン内の回数まで無料です。</li>
+      <li><b>公開・納品</b><br>ホームページは公開まで、チラシは印刷データまで仕上げます。</li>
+      <li><b>保守サポート（任意）</b><br>公開後の更新や、Googleマップ側の情報そろえもお手伝いします。</li>
+    </ol>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <p class="kicker">FAQ</p>
+    <h2 class="sec">よくある質問</h2>
+    <details><summary>文章や写真を用意できていません</summary><p>ヒアリングをもとに、原稿づくりからお手伝いします。写真はスマホで撮ったものでも大丈夫です。撮り方のコツもお伝えします。</p></details>
+    <details><summary>自分で更新できますか？</summary><p>基本は保守プランで、こちらが更新を代行します（スタンダードは月2回まで）。ご自身で頻繁に更新したい場合は、別の作り方をご提案しますので、ヒアリングでお知らせください。</p></details>
+    <details><summary>予約や通販はできますか？</summary><p>できます。サイト本体は安全な静的サイトのまま、予約は予約サービス（Airリザーブなど）、通販はBASE・STORESなどの専門サービスと組み合わせます。</p></details>
+    <details><summary>連絡や対応の時間は？</summary><p>ご連絡はメール・チャットが中心で、対応は平日夜と土日が中心です。勤務先の許可を得て活動しており、納期は事前に必ずお約束します。</p></details>
+    <details><summary>補助金は使えますか？</summary><p>小規模事業者持続化補助金など、ホームページ制作が対象になり得る制度があります。条件は公募ごとに変わるため、最新情報を一緒に確認しましょう。※申請手続きの代行や税務相談は行っていません。</p></details>
+    <details><summary>どこまで対応していますか？</summary><p>さいたま市・大宮・東大宮周辺は対面でのお打ち合わせも可能です。それ以外の地域もオンラインで対応します。</p></details>
+  </div>
+</section>
+
+<section id="column">
+  <div class="wrap">
+    <p class="kicker">COLUMN</p>
+    <h2 class="sec">お役立ちコラム</h2>
+    <p class="lead">小さなお店のホームページと集客について、よく聞かれることをまとめています。</p>
+    <div class="col-list">
+      <a class="col-card" href="column/homepage-price.html"><span class="q">料金</span><h3>ホームページ制作の相場は？小さなお店が10万円でできること</h3><time datetime="2026-11-21">2026.11.21</time></a>
+      <a class="col-card" href="column/meo-basics.html"><span class="q">集客</span><h3>Googleマップに出るお店になるには？はじめてのMEO</h3><time datetime="2026-11-21">2026.11.21</time></a>
+      <a class="col-card" href="column/ai-search.html"><span class="q">これから</span><h3>AI検索に選ばれるサイトとは？今からできる6つの準備</h3><time datetime="2026-11-21">2026.11.21</time></a>
+    </div>
+    <p class="more-col"><a class="btn btn-line" href="column/">コラム一覧へ</a></p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <h2>まずは、気軽にご相談ください</h2>
+      <p>「こんなの作れる？」「だいたいいくら？」だけでも大丈夫です。お店のこれからを、一緒に形にしましょう。</p>
+      <a class="btn btn-gold" href="mailto:luna.ai.atelier@gmail.com?subject=%E3%81%94%E7%9B%B8%E8%AB%87%EF%BC%88%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E5%88%B6%E4%BD%9C%EF%BC%89">メールで相談する</a>
+      <p class="mail">メールアプリが開かない場合は：<b>luna.ai.atelier@gmail.com</b></p>
+      <div class="tmpl"><b>書いていただけるとスムーズです</b><br>・お店の名前と業種<br>・作りたいもの（ホームページ／リール／チラシ）<br>・いまのサイトやSNSがあればそのURL<br>・ご希望の時期</div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div><p class="flogo">LUNA AI <span>ATELIER</span></p><p>さいたま市・大宮周辺の小さなお店のための<br>ホームページ制作／リール動画／チラシ制作</p></div>
+    <div><h4>メニュー</h4><ul><li><a href="#works">制作サンプル</a></li><li><a href="#price">料金</a></li><li><a href="#faq">よくある質問</a></li></ul></div>
+    <div><h4>ほか</h4><ul><li><a href="column/">お役立ちコラム</a></li><li><a href="privacy.html">プライバシーポリシー</a></li><li><a href="#contact">お問い合わせ</a></li></ul></div>
+    <p class="copy">© 2026 LUNA AI ATELIER</p>
+  </div>
+</footer>
+</body>
+</html>

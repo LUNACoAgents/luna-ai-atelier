@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>あさひ屋根板金（制作サンプル）｜LUNA AI ATELIER</title>
+<meta name="description" content="LUNA AI ATELIERの制作サンプル。架空の屋根・板金工事店のホームページです。">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#14243a;--navy2:#22395a;--orange:#f08a24;--orange2:#ffb062;--gray:#eef1f5;--text:#1e2a38;--muted:#5d6a79}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:"Noto Sans JP",sans-serif;color:var(--text);line-height:1.85;background:#fff}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  .sample{background:#0b1522;color:#cfd8e3;font-size:12.5px;text-align:center;padding:6px 12px}
+  .sample a{color:var(--orange2)}
+  header{background:#fff;border-bottom:4px solid var(--orange);position:sticky;top:0;z-index:10}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:70px}
+  .logo{font-weight:900;font-size:22px;color:var(--navy);text-decoration:none;line-height:1.2}
+  .logo small{display:block;font-size:11px;color:var(--muted);font-weight:700}
+  .hd-tel{text-align:right;text-decoration:none}
+  .hd-tel b{display:block;font-size:22px;color:var(--navy);font-weight:900;line-height:1.2}
+  .hd-tel small{font-size:11.5px;color:var(--muted)}
+  .hero{background:linear-gradient(120deg,var(--navy) 0 55%,var(--navy2));color:#fff;position:relative;overflow:hidden}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:center;padding-top:56px;padding-bottom:56px;position:relative;z-index:1}
+  .hero .chip{display:inline-block;background:var(--orange);color:#fff;font-weight:900;padding:4px 14px;font-size:14px;transform:skew(-8deg)}
+  .hero h1{font-size:42px;font-weight:900;line-height:1.4;margin:16px 0 12px}
+  .hero h1 em{font-style:normal;color:var(--orange2)}
+  .hero p{color:#cfd9e6}
+  .checks{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+  .checks span{border:1px solid rgba(255,255,255,.4);padding:4px 12px;font-size:13.5px;font-weight:700}
+  .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+  .b{display:inline-block;text-decoration:none;font-weight:900;padding:15px 26px;border-radius:6px}
+  .b-or{background:var(--orange);color:#fff;box-shadow:0 6px 0 #b8620f}
+  .b-wh{background:#fff;color:var(--navy)}
+  .hero svg{width:100%;height:auto}
+  section{padding:72px 0 10px}
+  h2{font-size:30px;font-weight:900;color:var(--navy);text-align:center;line-height:1.4}
+  h2 small{display:block;color:var(--orange);font-size:13px;letter-spacing:.3em}
+  .lead{text-align:center;color:var(--muted);margin:10px auto 34px;max-width:680px}
+  .worry{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .worry div{background:var(--gray);border-radius:10px;padding:20px 16px;text-align:center;font-weight:700;font-size:15px}
+  .worry div i{display:block;font-style:normal;font-size:30px;margin-bottom:6px}
+  .works{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .case{border:1px solid #dfe4ea;border-radius:12px;overflow:hidden}
+  .ba{display:grid;grid-template-columns:1fr 1fr}
+  .ba div{aspect-ratio:1;position:relative}
+  .ba div b{position:absolute;left:8px;top:8px;background:rgba(0,0,0,.6);color:#fff;font-size:11px;padding:2px 8px}
+  .bf{background:linear-gradient(160deg,#9aa0a6,#6d6157 60%,#8a7a6b)}
+  .af{background:linear-gradient(160deg,#5c7088,#2b3f5a 60%,#3c5474)}
+  .case .tx{padding:16px}
+  .case h3{font-size:16px;color:var(--navy)}
+  .case dl{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;font-size:13.5px;color:var(--muted);margin-top:6px}
+  .case dt{font-weight:700}
+  .serv{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .serv div{border-top:4px solid var(--navy);background:#fff;box-shadow:0 6px 20px rgba(20,36,58,.08);padding:22px}
+  .serv h3{color:var(--navy);font-size:18px}
+  .serv p{font-size:14px;color:var(--muted)}
+  .serv .pr{color:var(--orange);font-weight:900;margin-top:6px}
+  .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;counter-reset:f}
+  .flow div{background:var(--navy);color:#fff;padding:18px 12px;text-align:center;font-weight:700;font-size:14px;position:relative}
+  .flow div::before{counter-increment:f;content:"STEP " counter(f);display:block;color:var(--orange2);font-size:11px;letter-spacing:.2em}
+  .flow small{display:block;font-weight:400;color:#c4d0de;font-size:12px;margin-top:4px}
+  .company{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  .company table{width:100%;border-collapse:collapse;font-size:14.5px}
+  .company th{width:30%;text-align:left;background:var(--gray);padding:12px;border-bottom:1px solid #fff}
+  .company td{padding:12px;border-bottom:1px solid var(--gray)}
+  .company .map{background:linear-gradient(90deg,transparent 47%,#fff 47% 53%,transparent 53%),linear-gradient(0deg,transparent 47%,#fff 47% 53%,transparent 53%),#dde3ea;border-radius:10px;min-height:260px}
+  .big-cta{margin-top:72px;background:var(--orange);color:#fff;text-align:center;padding:50px 20px}
+  .big-cta h2{color:#fff}
+  .big-cta p{margin:10px 0 22px}
+  .big-cta .tel{font-size:36px;font-weight:900;text-decoration:none;display:block;line-height:1.3}
+  footer{background:var(--navy);color:#aab7c7;text-align:center;font-size:13px;padding:26px 16px 80px}
+  .bar{position:fixed;left:0;right:0;bottom:0;display:none;grid-template-columns:1fr 1fr;z-index:20}
+  .bar a{text-align:center;padding:15px 6px;font-weight:900;text-decoration:none;color:#fff}
+  .bar a:first-child{background:var(--navy)}.bar a:last-child{background:var(--orange)}
+  @media (max-width:820px){
+    .hero .wrap{grid-template-columns:1fr}
+    .hero h1{font-size:30px}
+    .worry{grid-template-columns:1fr 1fr}
+    .works,.serv,.company{grid-template-columns:1fr}
+    .flow{grid-template-columns:1fr}
+    .hd-tel{display:none}
+    .bar{display:grid}
+    h2{font-size:24px}
+  }
+</style>
+</head>
+<body>
+<div class="sample">これは <a href="../../index.html">LUNA AI ATELIER</a> の制作サンプルです。会社・住所・電話番号・施工事例はすべて架空です。</div>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#">あさひ屋根板金<small>屋根・外壁・雨どい工事｜さいたま市</small></a>
+    <a class="hd-tel" href="#contact"><small>無料点検・お見積り　8:00〜18:00</small><b>☎ 0120-000-000</b></a>
+  </div>
+</header>
+
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div>
+      <span class="chip">地元さいたまで創業40年（架空）</span>
+      <h1>屋根の不安、<br><em>まずは無料で点検</em>します。</h1>
+      <p>雨もり・強風のあとの屋根・色あせた外壁。職人が直接うかがい、写真を見せながら今の状態をご説明します。下請けを通さない自社施工なので、中間マージンがかかりません。</p>
+      <div class="checks"><span>✔ 点検・見積り無料</span><span>✔ 自社職人が施工</span><span>✔ 工事後10年保証</span></div>
+      <div class="cta"><a class="b b-or" href="#contact">無料点検を申し込む</a><a class="b b-wh" href="#works">施工事例を見る</a></div>
+    </div>
+    <svg viewBox="0 0 400 300" aria-hidden="true">
+      <rect x="70" y="150" width="260" height="130" fill="#e9edf2"/>
+      <polygon points="40,160 200,50 360,160" fill="#f08a24"/>
+      <polygon points="60,160 200,64 340,160" fill="#ffb062" opacity=".35"/>
+      <g stroke="#c86a12" stroke-width="3" opacity=".5"><line x1="90" y1="140" x2="200" y2="64"/><line x1="140" y1="150" x2="200" y2="64"/><line x1="260" y1="150" x2="200" y2="64"/><line x1="310" y1="140" x2="200" y2="64"/></g>
+      <rect x="110" y="190" width="50" height="50" fill="#9fb3c8"/><rect x="240" y="190" width="50" height="50" fill="#9fb3c8"/>
+      <rect x="180" y="210" width="40" height="70" fill="#22395a"/>
+      <rect x="250" y="70" width="8" height="70" fill="#d7dee6"/><rect x="232" y="60" width="44" height="10" fill="#d7dee6"/>
+      <circle cx="268" cy="38" r="10" fill="#ffe0bd"/><rect x="258" y="48" width="20" height="26" rx="4" fill="#fff"/><rect x="256" y="28" width="24" height="8" rx="4" fill="#f08a24"/>
+    </svg>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><small>CHECK</small>こんな症状、ありませんか？</h2>
+    <p class="lead">ひとつでも当てはまったら、早めの点検がおすすめです。小さいうちに直すほど、費用は安くすみます。</p>
+    <div class="worry">
+      <div><i>💧</i>天井にシミがある</div>
+      <div><i>🌬️</i>台風のあと屋根が心配</div>
+      <div><i>🎨</i>外壁が色あせてきた</div>
+      <div><i>🧱</i>雨どいがゆがんでいる</div>
+    </div>
+  </div>
+</section>
+
+<section id="works">
+  <div class="wrap">
+    <h2><small>WORKS</small>施工事例</h2>
+    <p class="lead">実際のサイトでは、施工前・施工後の写真と費用・工期を載せます。「うちと似た家でいくらかかったか」が一番の安心材料になります。</p>
+    <div class="works">
+      <div class="case"><div class="ba"><div class="bf"><b>施工前</b></div><div class="af"><b>施工後</b></div></div><div class="tx"><h3>スレート屋根のカバー工法</h3><dl><dt>地域</dt><dd>さいたま市〇〇区</dd><dt>工期</dt><dd>5日</dd><dt>費用</dt><dd>約120万円（架空）</dd></dl></div></div>
+      <div class="case"><div class="ba"><div class="bf"><b>施工前</b></div><div class="af"><b>施工後</b></div></div><div class="tx"><h3>棟板金の交換</h3><dl><dt>地域</dt><dd>さいたま市〇〇区</dd><dt>工期</dt><dd>1日</dd><dt>費用</dt><dd>約18万円（架空）</dd></dl></div></div>
+      <div class="case"><div class="ba"><div class="bf"><b>施工前</b></div><div class="af"><b>施工後</b></div></div><div class="tx"><h3>雨どいの全交換</h3><dl><dt>地域</dt><dd>上尾市</dd><dt>工期</dt><dd>2日</dd><dt>費用</dt><dd>約35万円（架空）</dd></dl></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><small>SERVICE</small>対応工事と料金の目安</h2>
+    <p class="lead">建物の大きさや傷み方で変わるため、正式な金額は点検後にお出しします。</p>
+    <div class="serv">
+      <div><h3>屋根カバー工法</h3><p>今の屋根の上に新しい金属屋根をかぶせます。解体が少なく工期も短め。</p><p class="pr">100万円〜（架空）</p></div>
+      <div><h3>棟板金・部分補修</h3><p>強風で浮いた板金や、割れた部分だけを直します。</p><p class="pr">3万円〜（架空）</p></div>
+      <div><h3>外壁塗装・張り替え</h3><p>色あせ・ひび割れに。塗料や外壁材は予算に合わせてご提案。</p><p class="pr">80万円〜（架空）</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><small>FLOW</small>ご依頼の流れ</h2>
+    <p class="lead">点検・見積りのあとに断っていただいても、費用は一切かかりません。</p>
+    <div class="flow">
+      <div>お問い合わせ<small>電話・フォーム</small></div>
+      <div>無料点検<small>写真で状態をご説明</small></div>
+      <div>お見積り<small>内訳まで明記</small></div>
+      <div>施工<small>近隣へのごあいさつも</small></div>
+      <div>保証・点検<small>工事後も定期点検</small></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><small>COMPANY</small>会社概要</h2>
+    <p class="lead">&nbsp;</p>
+    <div class="company">
+      <table>
+        <tr><th>会社名</th><td>あさひ屋根板金（架空）</td></tr>
+        <tr><th>所在地</th><td>埼玉県さいたま市〇〇区〇〇 7-8-9</td></tr>
+        <tr><th>対応エリア</th><td>さいたま市全域・上尾市・蓮田市</td></tr>
+        <tr><th>資格</th><td>建築板金技能士 ほか（架空）</td></tr>
+        <tr><th>営業時間</th><td>8:00〜18:00（日曜定休）</td></tr>
+      </table>
+      <div class="map" role="img" aria-label="地図のイメージ"></div>
+    </div>
+  </div>
+</section>
+
+<div class="big-cta" id="contact">
+  <h2>点検・お見積りは無料です</h2>
+  <p>「見てもらうだけ」でも大丈夫。しつこい営業はいたしません。</p>
+  <a class="tel" href="#contact">☎ 0120-000-000</a>
+  <p style="margin:6px 0 0;font-size:13px">受付 8:00〜18:00（日曜定休）／フォームは24時間受付</p>
+</div>
+<footer>あさひ屋根板金（架空の会社）　|　制作：<a href="../../index.html" style="color:var(--orange2)">LUNA AI ATELIER</a></footer>
+<nav class="bar"><a href="#contact">☎ 電話で相談</a><a href="#contact">無料点検を申込</a></nav>
+</body>
+</html>

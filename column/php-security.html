@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>「PHP問題」とは？静的サイトが改ざんされにくい理由｜LUNA AI ATELIER</title>
+<meta name="description" content="「PHP問題」と呼ばれるホームページの改ざんトラブルの正体と、LUNA AI ATELIERがサーバー側で動く部品を持たない静的サイトを基本にしている理由を解説します。">
+<!-- プレオープン中は検索に出さない。公開OKになったらこの1行を消す -->
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://lunacoagents.github.io/luna-ai-atelier/column/php-security.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="LUNA AI ATELIER">
+<meta property="og:title" content="「PHP問題」とは？静的サイトが改ざんされにくい理由">
+<meta property="og:description" content="「PHP問題」と呼ばれるホームページの改ざんトラブルの正体と、LUNA AI ATELIERがサーバー側で動く部品を持たない静的サイトを基本にしている理由を解説します。">
+<meta property="og:url" content="https://lunacoagents.github.io/luna-ai-atelier/column/php-security.html">
+<meta property="og:image" content="https://lunacoagents.github.io/luna-ai-atelier/assets/img/ogp.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b1a2b'/%3E%3Cpath d='M20 6a10 10 0 1 0 7 15A8 8 0 0 1 20 6' fill='%23e4c48a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+[{"@context": "https://schema.org", "@type": "Article", "headline": "「PHP問題」とは？静的サイトが改ざんされにくい理由", "description": "「PHP問題」と呼ばれるホームページの改ざんトラブルの正体と、LUNA AI ATELIERがサーバー側で動く部品を持たない静的サイトを基本にしている理由を解説します。", "datePublished": "2026-11-21", "dateModified": "2026-11-21", "author": {"@type": "Organization", "name": "LUNA AI ATELIER", "url": "https://lunacoagents.github.io/luna-ai-atelier/"}, "publisher": {"@type": "Organization", "name": "LUNA AI ATELIER"}, "mainEntityOfPage": "https://lunacoagents.github.io/luna-ai-atelier/column/php-security.html"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://lunacoagents.github.io/luna-ai-atelier/"}, {"@type": "ListItem", "position": 2, "name": "コラム", "item": "https://lunacoagents.github.io/luna-ai-atelier/column/"}, {"@type": "ListItem", "position": 3, "name": "「PHP問題」とは？静的サイトが改ざんされにくい理由", "item": "https://lunacoagents.github.io/luna-ai-atelier/column/php-security.html"}]}]
+</script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="../">LUNA AI <span>ATELIER</span></a>
+    <ul>
+      <li><a href="../#works">制作サンプル</a></li>
+      <li><a href="../#price">料金</a></li>
+      <li class="keep"><a href="./">コラム</a></li>
+      <li class="keep"><a class="cta" href="../#contact">無料相談</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="art-head">
+  <div class="narrow">
+    <p class="crumb"><a href="../">ホーム</a> ／ <a href="./">コラム</a></p>
+    <h1>「PHP問題」とは？静的サイトが改ざんされにくい理由</h1>
+    <p class="meta"><span class="tag">セキュリティ</span><time datetime="2026-11-21">公開 2026.11.21</time><span>LUNA AI ATELIER</span></p>
+  </div>
+</div>
+<main class="article">
+  <div class="narrow">
+    <div class="summary"><b>この記事のポイント</b><ul><li>PHPそのものが悪いわけではない。問題は「古いまま放置」「部品の欠陥」「更新されないサイト」が重なること</li><li>動く部品が多いほど、守り続ける手間と侵入の入口が増える</li><li>静的サイトは部品そのものを持たないので、この種類のリスクを最初からなくせる</li></ul></div>
+
+<h2>そもそも「PHP問題」とは？</h2>
+<p>PHPは、ホームページを動かすためによく使われるプログラム言語で、それ自体が悪いものではありません。世界中の多くのサイトがPHPで問題なく動いています。いわゆる「PHP問題」と呼ばれるのは、次のような状態が重なったときに起きるトラブルのことです。</p>
+<div class="card"><ul>
+<li><b>古いバージョンのまま放置</b>：サポートが終わった古いPHPには、セキュリティの穴が見つかっても修正が届きません。</li>
+<li><b>部品（プラグイン）の脆弱性</b>：WordPressなどの改ざん被害の多くは、本体ではなく追加した部品の欠陥から侵入されます。</li>
+<li><b>更新されないサイト</b>：作ったきり何年も触っていないサイトほど、古い部品が残りやすく、狙われやすくなります。</li>
+</ul></div>
+
+<h2>なぜ「動く部品が多い」と危ないの？</h2>
+<p>サーバーの上でプログラムが動くサイトは、できることが多い反面、「守らなければいけない入口」も増えます。本体、追加した部品、データベース、サーバーのソフト。それぞれを最新に保ち続ける必要があり、どれか1つでも古いままだと、そこが入口になります。</p>
+<div class="point">ポイント：問題は「PHPかどうか」ではなく、「動く部品が多いほど、守り続ける手間と入口が増える」ことです。</div>
+
+<h2>静的サイトだと何が違う？</h2>
+<p>静的サイトは、あらかじめ完成したページ（HTML）をそのまま表示するだけの作りです。サーバー側で動くプログラムやデータベースを持たないため、上のようなタイプの侵入口がそもそもありません。</p>
+<ul>
+<li>部品の更新作業が要らないので、保守の手間と費用が小さい</li>
+<li>無料の公開先（GitHub Pagesなど）に置けて、サーバー代がかからない</li>
+<li>通信はHTTPSで暗号化される</li>
+<li>表示が速い（スマホでの見やすさは検索の評価にも関わります）</li>
+</ul>
+
+<h2>予約や通販が必要なときは？</h2>
+<p>サイト本体は静的なまま、機能は専門サービスと組み合わせます。予約は予約サービス（Airリザーブ、RESERVA、STORES予約など）、通販はBASE・STORES・Shopifyなどの部品を埋め込みます。お金や個人情報を扱う部分は、それを専門に守っている会社の仕組みに任せる、という考え方です。</p>
+
+<h2>WordPressはダメなの？</h2>
+<p>いいえ。お店の方がご自身で毎日のように記事を更新したい場合など、WordPressが向いているケースもあります。その場合は、部品を最小限にして、更新を続けられる体制を一緒に考えることが大切です。LUNA AI ATELIERでは、小さなお店の多くにとって手間と費用のバランスがいい静的サイトを基本にしています。</p>
+
+<div class="cta-box">
+  <h2>うちの場合はどうなる？を、無料でお答えします</h2>
+  <p>今のサイトやGoogleマップの状態を見て、何から手をつけるといいかをお伝えします。</p>
+  <a class="btn btn-gold" href="../#contact">無料で相談する</a>
+</div>
+    <div class="related"><h2>あわせて読みたい</h2><ul><li><a href="seo-now-and-then.html">SEO対策の今と昔：小さなお店がやるべきこと・やってはいけないこと</a></li><li><a href="homepage-price.html">ホームページ制作の相場は？小さなお店が10万円でできること</a></li></ul></div>
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div><p class="flogo">LUNA AI <span>ATELIER</span></p><p>さいたま市・大宮周辺の小さなお店のための<br>ホームページ制作／リール動画／チラシ制作</p></div>
+    <div><h4>メニュー</h4><ul><li><a href="../#works">制作サンプル</a></li><li><a href="../#price">料金</a></li><li><a href="../#faq">よくある質問</a></li></ul></div>
+    <div><h4>ほか</h4><ul><li><a href="./">お役立ちコラム</a></li><li><a href="../privacy.html">プライバシーポリシー</a></li><li><a href="../#contact">お問い合わせ</a></li></ul></div>
+    <p class="copy">© 2026 LUNA AI ATELIER</p>
+  </div>
+</footer>
+</body>
+</html>

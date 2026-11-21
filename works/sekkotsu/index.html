@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>こもれび整骨院（制作サンプル）｜LUNA AI ATELIER</title>
+<meta name="description" content="LUNA AI ATELIERの制作サンプル。架空の整骨院のホームページです。">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--green:#55765c;--green2:#7d9b82;--cream:#f8f4ec;--wood:#c39a6b;--text:#33403a;--muted:#6b7770;--white:#fff}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:"Noto Sans JP",sans-serif;background:var(--cream);color:var(--text);line-height:1.9}
+  a{color:inherit}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  .sample{background:#2f3a33;color:#e7efe8;font-size:12.5px;text-align:center;padding:6px 12px}
+  .sample a{color:#f3d9b5}
+  header{background:var(--white);border-bottom:1px solid #e7e0d2;position:sticky;top:0;z-index:10}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{font-family:"Zen Maru Gothic",sans-serif;font-weight:700;font-size:20px;color:var(--green);display:flex;align-items:center;gap:8px;text-decoration:none}
+  .logo small{display:block;font-size:11px;color:var(--muted);font-weight:500;line-height:1}
+  .tel{background:var(--green);color:#fff;text-decoration:none;padding:8px 16px;border-radius:999px;font-weight:700;font-size:14px}
+  .hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#eef3e8,#f8f4ec 60%)}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding-top:60px;padding-bottom:60px}
+  .hero h1{font-family:"Zen Maru Gothic",sans-serif;font-size:40px;line-height:1.5;color:#2f4636}
+  .hero h1 em{font-style:normal;color:var(--green);background:linear-gradient(transparent 65%,#f1dfc4 65%)}
+  .hero p{margin-top:16px;color:var(--muted)}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+  .tags span{background:#fff;border:1px solid #dfe6dc;border-radius:999px;padding:4px 14px;font-size:13px;color:var(--green)}
+  .btns{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:13px 28px;border-radius:999px;text-decoration:none;font-weight:700}
+  .btn-main{background:var(--wood);color:#fff;box-shadow:0 10px 20px rgba(195,154,107,.35)}
+  .btn-sub{background:#fff;color:var(--green);border:1px solid var(--green2)}
+  .hero svg{width:100%;height:auto}
+  section{padding:70px 0 20px}
+  h2{font-family:"Zen Maru Gothic",sans-serif;text-align:center;font-size:28px;color:#2f4636}
+  h2 small{display:block;font-family:"Noto Sans JP",sans-serif;font-size:12px;letter-spacing:.3em;color:var(--wood);font-weight:700}
+  .lead{text-align:center;color:var(--muted);margin:10px auto 34px;max-width:640px}
+  .feat{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .feat div{background:#fff;border-radius:20px;padding:28px 22px;text-align:center;box-shadow:0 6px 20px rgba(60,80,60,.06)}
+  .feat .ic{width:64px;height:64px;border-radius:50%;background:#eef3e8;margin:0 auto 12px;display:grid;place-items:center;font-size:28px}
+  .feat h3{font-size:17px;color:var(--green);margin-bottom:6px}
+  .feat p{font-size:14px;color:var(--muted);text-align:left}
+  .menu{max-width:760px;margin:0 auto;background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 6px 20px rgba(60,80,60,.06)}
+  .menu div{display:flex;justify-content:space-between;gap:16px;padding:18px 24px;border-bottom:1px dashed #e4ddcf}
+  .menu div:last-child{border:none}
+  .menu b{color:#2f4636}
+  .menu span{color:var(--muted);font-size:13px;display:block}
+  .menu .p{font-weight:700;color:var(--wood);white-space:nowrap}
+  .note{text-align:center;font-size:13px;color:var(--muted);margin-top:12px}
+  .greet{display:grid;grid-template-columns:220px 1fr;gap:32px;align-items:center;background:#fff;border-radius:24px;padding:34px;box-shadow:0 6px 20px rgba(60,80,60,.06)}
+  .greet .av{width:200px;height:200px;border-radius:50%;background:radial-gradient(circle at 50% 38%,#f1dfc4 0 22%,transparent 23%),radial-gradient(ellipse at 50% 100%,#7d9b82 0 48%,transparent 49%),#eef3e8}
+  .greet h3{color:var(--green);font-size:19px;margin-bottom:6px}
+  table.hours{width:100%;max-width:760px;margin:0 auto;border-collapse:collapse;background:#fff;border-radius:16px;overflow:hidden;font-size:14px;text-align:center}
+  table.hours th,table.hours td{padding:12px 6px;border-bottom:1px solid #eee7da}
+  table.hours th{background:var(--green);color:#fff;font-weight:500}
+  .ok{color:var(--green);font-weight:700}.ng{color:#c9b9a3}
+  .access{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+  .map{border-radius:20px;min-height:260px;background:
+    linear-gradient(90deg,transparent 48%,#fff 48% 52%,transparent 52%),
+    linear-gradient(0deg,transparent 58%,#fff 58% 62%,transparent 62%),
+    linear-gradient(30deg,transparent 70%,#e4ecdf 70% 73%,transparent 73%),#dfe8da;position:relative}
+  .map::after{content:"📍";position:absolute;left:50%;top:56%;transform:translate(-50%,-100%);font-size:34px}
+  .info{background:#fff;border-radius:20px;padding:26px}
+  .info dt{font-weight:700;color:var(--green);font-size:14px}
+  .info dd{margin-bottom:12px;font-size:15px}
+  details{max-width:760px;margin:0 auto 10px;background:#fff;border-radius:14px;padding:16px 20px}
+  summary{font-weight:700;cursor:pointer;color:#2f4636}
+  details p{margin-top:6px;color:var(--muted);font-size:14.5px}
+  footer{margin-top:70px;background:#2f4636;color:#d6e1d7;text-align:center;padding:30px 16px;font-size:13px}
+  .bar{position:fixed;left:0;right:0;bottom:0;display:none;grid-template-columns:1fr 1fr;z-index:20;box-shadow:0 -6px 20px rgba(0,0,0,.08)}
+  .bar a{text-align:center;padding:16px 8px;font-weight:700;text-decoration:none;color:#fff}
+  .bar a:first-child{background:var(--green)}.bar a:last-child{background:var(--wood)}
+  @media (max-width:760px){
+    .hero .wrap{grid-template-columns:1fr;padding-top:36px}
+    .hero h1{font-size:29px}
+    .feat,.access{grid-template-columns:1fr}
+    .greet{grid-template-columns:1fr;text-align:center;padding:26px}
+    .greet .av{margin:0 auto;width:150px;height:150px}
+    .greet p{text-align:left}
+    .tel{display:none}
+    .bar{display:grid}
+    body{padding-bottom:58px}
+  }
+</style>
+</head>
+<body>
+<div class="sample">これは <a href="../../index.html">LUNA AI ATELIER</a> の制作サンプルです。お店・住所・電話番号はすべて架空です。</div>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#"><span>🌿</span><span>こもれび整骨院<small>KOMOREBI SEIKOTSUIN</small></span></a>
+    <a class="tel" href="#tel">☎ 000-0000-0000</a>
+  </div>
+</header>
+
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div>
+      <h1>その痛み、<br><em>我慢しなくて大丈夫。</em></h1>
+      <p>肩こり・腰痛・スポーツのケガから、産後の骨盤ケアまで。駅から歩いて5分、木のぬくもりのある院で、一人ひとりの体に合わせて施術します。</p>
+      <div class="tags"><span>各種保険取扱い</span><span>土日も診療</span><span>キッズスペースあり</span></div>
+      <div class="btns"><a class="btn btn-main" href="#reserve">WEBで予約する</a><a class="btn btn-sub" href="#menu">施術メニュー</a></div>
+    </div>
+    <svg viewBox="0 0 420 340" aria-hidden="true">
+      <circle cx="220" cy="170" r="150" fill="#e6eedf"/>
+      <rect x="90" y="190" width="260" height="22" rx="11" fill="#c39a6b"/>
+      <rect x="110" y="212" width="12" height="70" fill="#a98157"/><rect x="318" y="212" width="12" height="70" fill="#a98157"/>
+      <rect x="100" y="166" width="240" height="28" rx="14" fill="#fff"/>
+      <circle cx="140" cy="150" r="22" fill="#f1dfc4"/>
+      <rect x="160" y="140" width="150" height="30" rx="15" fill="#7d9b82"/>
+      <circle cx="300" cy="96" r="20" fill="#f1dfc4"/>
+      <path d="M282 118 q18 -8 36 0 l10 60 h-56z" fill="#55765c"/>
+      <path d="M290 140 q-30 0 -60 14" stroke="#f1dfc4" stroke-width="10" stroke-linecap="round" fill="none"/>
+      <g fill="#7d9b82" opacity=".7"><ellipse cx="60" cy="80" rx="18" ry="8" transform="rotate(-30 60 80)"/><ellipse cx="370" cy="250" rx="18" ry="8" transform="rotate(30 370 250)"/><ellipse cx="380" cy="60" rx="14" ry="6"/></g>
+    </svg>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><small>FEATURES</small>こもれびの3つの約束</h2>
+    <p class="lead">「どこに行っても良くならなかった」という方にこそ、来ていただきたい院です。</p>
+    <div class="feat">
+      <div><div class="ic">👂</div><h3>まず、しっかり聞きます</h3><p>初回は20分かけて、痛みの出方や生活のくせをお聞きします。原因が分かると、施術も通う回数も変わります。</p></div>
+      <div><div class="ic">🤲</div><h3>やさしい手技</h3><p>ボキボキしない、体にやさしい施術が中心です。ご高齢の方や、強い刺激が苦手な方も安心してお越しください。</p></div>
+      <div><div class="ic">🏠</div><h3>おうちケアまで</h3><p>通院のない日に自分でできるストレッチを、紙にまとめてお渡しします。「通わなくてよくなる」が目標です。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <h2><small>MENU</small>施術メニューと料金</h2>
+    <p class="lead">料金はすべて税込です。保険が使えるかどうかは、初回にご説明します。</p>
+    <div class="menu">
+      <div><p><b>保険施術</b><span>捻挫・打撲・挫傷など、急なケガ</span></p><p class="p">窓口負担 500円〜</p></div>
+      <div><p><b>全身もみほぐし（40分）</b><span>肩・首・腰をまとめてゆるめたい方に</span></p><p class="p">4,400円</p></div>
+      <div><p><b>骨盤調整（30分）</b><span>腰痛・反り腰・姿勢が気になる方に</span></p><p class="p">3,850円</p></div>
+      <div><p><b>産後骨盤ケア（40分）</b><span>お子さま連れOK・キッズスペースあり</span></p><p class="p">4,950円</p></div>
+      <div><p><b>初回カウンセリング</b><span>どのメニューにも20分のカウンセリング付き</span></p><p class="p">無料</p></div>
+    </div>
+    <p class="note">※サンプルのため料金は架空です。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="greet">
+      <div class="av" role="img" aria-label="院長のイラスト"></div>
+      <div>
+        <h3>院長あいさつ　木下 さくら（架空）</h3>
+        <p>柔道整復師になって15年。「来た時より少しでも笑顔で帰ってもらう」を大切にしてきました。痛みは、体からの大事なサインです。ひとりで抱えずに、まずは話しに来てください。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><small>HOURS</small>診療時間</h2>
+    <p class="lead">祝日は休診です。最終受付は終了の30分前です。</p>
+    <table class="hours">
+      <tr><th>時間</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th><th>日</th></tr>
+      <tr><td>9:00〜12:30</td><td class="ok">●</td><td class="ok">●</td><td class="ok">●</td><td class="ng">−</td><td class="ok">●</td><td class="ok">●</td><td class="ok">●</td></tr>
+      <tr><td>15:00〜20:00</td><td class="ok">●</td><td class="ok">●</td><td class="ok">●</td><td class="ng">−</td><td class="ok">●</td><td class="ok">●</td><td class="ng">−</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="tel">
+  <div class="wrap">
+    <h2><small>ACCESS</small>アクセス</h2>
+    <p class="lead">実際のサイトではGoogleマップを埋め込みます。</p>
+    <div class="access">
+      <div class="map" role="img" aria-label="地図のイメージ"></div>
+      <dl class="info">
+        <dt>住所</dt><dd>埼玉県さいたま市〇〇区〇〇 1-2-3（架空）</dd>
+        <dt>アクセス</dt><dd>〇〇駅 東口から徒歩5分／駐車場3台</dd>
+        <dt>電話</dt><dd><a href="#tel">000-0000-0000</a>（タップで発信できます）</dd>
+        <dt>予約</dt><dd id="reserve">WEB予約は24時間受付（予約サービスと連携）</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><small>FAQ</small>よくある質問</h2>
+    <p class="lead">&nbsp;</p>
+    <details><summary>予約なしでも行けますか？</summary><p>はい、空きがあればご案内できます。予約の方が優先になるため、WEB予約がおすすめです。</p></details>
+    <details><summary>服装はどうすればいいですか？</summary><p>動きやすい服装でお越しください。着替えもご用意しています。</p></details>
+    <details><summary>子どもを連れて行ってもいいですか？</summary><p>もちろんです。院内にキッズスペースがあり、スタッフも見守ります。</p></details>
+  </div>
+</section>
+
+<footer>こもれび整骨院（架空のお店）　|　制作：<a href="../../index.html" style="color:#f3d9b5">LUNA AI ATELIER</a></footer>
+<nav class="bar"><a href="#tel">☎ 電話する</a><a href="#reserve">WEB予約</a></nav>
+</body>
+</html>

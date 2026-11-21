@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>hair atelier NOA（制作サンプル）｜LUNA AI ATELIER</title>
+<meta name="description" content="LUNA AI ATELIERの制作サンプル。架空の美容室のホームページです。">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#1f1d1b;--sand:#efe8de;--beige:#d9cbb8;--stone:#8c8174;--white:#fbf9f6}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:"Noto Sans JP",sans-serif;font-weight:300;background:var(--white);color:var(--ink);line-height:2;letter-spacing:.04em}
+  a{color:inherit}
+  .en{font-family:"Cormorant Garamond",serif;letter-spacing:.12em}
+  .sample{background:var(--ink);color:#e9e2d8;font-size:12px;text-align:center;padding:6px 12px}
+  .sample a{color:#e8c9a0}
+  header{position:absolute;left:0;right:0;z-index:5}
+  header .in{display:flex;justify-content:space-between;align-items:center;padding:22px 32px}
+  .logo{font-size:24px;text-decoration:none}
+  nav a{margin-left:26px;text-decoration:none;font-size:13px}
+  .hero{min-height:88vh;display:grid;grid-template-columns:1fr 1fr;background:var(--sand)}
+  .hero .txt{display:flex;flex-direction:column;justify-content:center;padding:120px 8vw 60px}
+  .hero h1{font-family:"Noto Serif JP",serif;font-weight:500;font-size:34px;line-height:1.8}
+  .hero .big{font-size:76px;line-height:1;margin-bottom:28px;color:var(--stone)}
+  .hero p{margin-top:18px;color:#5b544c;font-size:14.5px}
+  .rsv{display:inline-block;margin-top:34px;border:1px solid var(--ink);padding:14px 42px;text-decoration:none;font-size:13px;letter-spacing:.2em;align-self:flex-start}
+  .rsv:hover{background:var(--ink);color:#fff}
+  .art{position:relative;overflow:hidden;background:linear-gradient(160deg,#cdbca6,#efe5d8 70%)}
+  .art::before{content:"";position:absolute;width:62%;aspect-ratio:3/4;left:19%;top:16%;border-radius:200px 200px 0 0;background:linear-gradient(180deg,#b19d84,#d9cbb8)}
+  .art svg{position:absolute;width:46%;left:27%;bottom:0}
+  .art span{position:absolute;right:28px;bottom:24px;font-size:12px;color:#6f6458;letter-spacing:.3em;writing-mode:vertical-rl}
+  section{padding:100px 0}
+  .wrap{max-width:980px;margin:0 auto;padding:0 24px}
+  .ttl{text-align:center;margin-bottom:46px}
+  .ttl .en{font-size:38px;display:block;line-height:1.2}
+  .ttl small{font-size:12px;color:var(--stone)}
+  .concept{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .concept .ph{aspect-ratio:4/5;background:linear-gradient(200deg,#e5d9c8,#b8a68f)}
+  .concept h3{font-family:"Noto Serif JP",serif;font-weight:500;font-size:22px;line-height:1.9;margin-bottom:18px}
+  .concept p{font-size:14.5px;color:#4d4740}
+  .menu{display:grid;grid-template-columns:1fr 1fr;gap:0 56px}
+  .menu div{display:flex;justify-content:space-between;border-bottom:1px solid #e2d9cc;padding:18px 0;font-size:15px}
+  .menu .p{font-family:"Cormorant Garamond",serif;font-size:19px;letter-spacing:.06em}
+  .menu-note{text-align:center;font-size:12.5px;color:var(--stone);margin-top:20px}
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+  .gallery div{aspect-ratio:1}
+  .g1{background:linear-gradient(135deg,#cbb89f,#efe3d2)}.g2{background:linear-gradient(135deg,#3d332c,#8c7563)}.g3{background:linear-gradient(135deg,#e6d6c2,#b49c80)}.g4{background:linear-gradient(135deg,#9c8a77,#d9cbb8)}
+  .g5{background:linear-gradient(135deg,#f0e6da,#c4ad91)}.g6{background:linear-gradient(135deg,#6e5d50,#c2ae98)}.g7{background:linear-gradient(135deg,#d9c7b0,#f6efe6)}.g8{background:linear-gradient(135deg,#5a4a3f,#a08a74)}
+  .insta{display:block;text-align:center;margin-top:26px;font-size:13px;text-decoration:none;letter-spacing:.2em}
+  .staff{display:grid;grid-template-columns:repeat(2,1fr);gap:40px}
+  .staff div{text-align:center}
+  .staff .face{width:160px;height:160px;border-radius:50%;margin:0 auto 16px;background:linear-gradient(#e5d9c8,#d1c1ad);overflow:hidden;display:flex;align-items:flex-end;justify-content:center}.staff .face svg{width:82%}
+  .staff h3{font-weight:400;font-size:16px}
+  .staff p{font-size:13.5px;color:#5b544c;max-width:340px;margin:8px auto 0}
+  .shop{background:var(--sand)}
+  .shop .grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+  .shop dl{font-size:14.5px}
+  .shop dt{font-size:12px;color:var(--stone);letter-spacing:.2em}
+  .shop dd{margin-bottom:16px}
+  .shop .map{background:repeating-linear-gradient(45deg,#e3d8ca 0 2px,transparent 2px 22px),#ebe2d6;min-height:280px}
+  footer{text-align:center;padding:40px 16px;font-size:12px;color:var(--stone)}
+  .fixed{position:fixed;right:20px;bottom:20px;background:var(--ink);color:#fff;text-decoration:none;padding:14px 26px;font-size:13px;letter-spacing:.2em;z-index:9}
+  @media (max-width:760px){
+    header .in{padding:16px 18px}
+    nav{display:none}
+    .hero{grid-template-columns:1fr}
+    .hero .art{min-height:56vh;order:-1}
+    .hero .txt{padding:40px 24px 60px}
+    .hero h1{font-size:25px}.hero .big{font-size:54px}
+    .concept,.menu,.shop .grid{grid-template-columns:1fr;gap:28px}
+    .gallery{grid-template-columns:repeat(2,1fr)}
+    .staff{grid-template-columns:1fr}
+    section{padding:72px 0}
+    .fixed{left:0;right:0;bottom:0;text-align:center}
+    body{padding-bottom:50px}
+  }
+</style>
+</head>
+<body>
+<div class="sample">これは <a href="../../index.html">LUNA AI ATELIER</a> の制作サンプルです。お店・住所・電話番号はすべて架空です。</div>
+<div style="position:relative">
+<header><div class="in"><a class="logo en" href="#">NOA</a><nav><a class="en" href="#concept">CONCEPT</a><a class="en" href="#menu">MENU</a><a class="en" href="#style">STYLE</a><a class="en" href="#shop">SHOP</a></nav></div></header>
+<div class="hero">
+  <div class="txt">
+    <div class="big en">hair atelier<br>NOA</div>
+    <h1>朝、鏡を見るのが<br>少し楽しみになる髪を。</h1>
+    <p>スタイリスト2名の、小さなプライベートサロン。<br>カットからカラー、髪質改善まで、最初から最後まで同じ人が担当します。</p>
+    <a class="rsv en" href="#shop">RESERVE</a>
+  </div>
+  <div class="art"><svg viewBox="0 0 200 240" aria-hidden="true"><path d="M30 240c0-52 30-80 70-80s70 28 70 80z" fill="#a8927a"/><rect x="88" y="128" width="24" height="34" rx="10" fill="#ecdcc8"/><path d="M48 110c0-50 22-82 52-82s52 32 52 82c0 18-6 30-14 36H62c-8-6-14-18-14-36z" fill="#3b322b"/><ellipse cx="100" cy="100" rx="34" ry="40" fill="#efe2d0"/><path d="M64 92c4-34 22-50 44-50 20 0 32 14 34 34-22 0-50-6-62-22-4 14-10 28-16 38z" fill="#3b322b"/></svg><span class="en">SINCE 2019</span></div>
+</div>
+</div>
+
+<section id="concept">
+  <div class="wrap">
+    <p class="ttl"><span class="en">CONCEPT</span><small>私たちについて</small></p>
+    <div class="concept">
+      <div class="ph" role="img" aria-label="店内のイメージ"></div>
+      <div>
+        <h3>「似合う」は、<br>話すことから見つかる。</h3>
+        <p>席は2つだけ。ほかのお客さまの目を気にせず、なりたい髪を気軽に話してください。生活スタイルや朝かけられる時間まで聞いたうえで、おうちで再現しやすいスタイルをご提案します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" style="background:var(--sand)">
+  <div class="wrap">
+    <p class="ttl"><span class="en">MENU</span><small>メニュー（税込）</small></p>
+    <div class="menu">
+      <div><span>カット</span><span class="p">¥5,500</span></div>
+      <div><span>カット＋カラー</span><span class="p">¥11,000</span></div>
+      <div><span>カット＋髪質改善トリートメント</span><span class="p">¥13,200</span></div>
+      <div><span>前髪カット</span><span class="p">¥1,100</span></div>
+      <div><span>ヘッドスパ（30分）</span><span class="p">¥4,400</span></div>
+      <div><span>学生カット</span><span class="p">¥4,400</span></div>
+    </div>
+    <p class="menu-note">※サンプルのため料金は架空です。</p>
+  </div>
+</section>
+
+<section id="style">
+  <div class="wrap">
+    <p class="ttl"><span class="en">STYLE</span><small>スタイル</small></p>
+    <div class="gallery" role="img" aria-label="スタイル写真のイメージ"><div class="g1"></div><div class="g2"></div><div class="g3"></div><div class="g4"></div><div class="g5"></div><div class="g6"></div><div class="g7"></div><div class="g8"></div></div>
+    <a class="insta en" href="#">MORE ON INSTAGRAM →</a>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <p class="ttl"><span class="en">STYLIST</span><small>スタイリスト</small></p>
+    <div class="staff">
+      <div><div class="face"><svg viewBox="0 0 200 240" aria-hidden="true"><path d="M30 240c0-52 30-80 70-80s70 28 70 80z" fill="#a8927a"/><rect x="88" y="128" width="24" height="34" rx="10" fill="#ecdcc8"/><path d="M48 110c0-50 22-82 52-82s52 32 52 82c0 18-6 30-14 36H62c-8-6-14-18-14-36z" fill="#3b322b"/><ellipse cx="100" cy="100" rx="34" ry="40" fill="#efe2d0"/><path d="M64 92c4-34 22-50 44-50 20 0 32 14 34 34-22 0-50-6-62-22-4 14-10 28-16 38z" fill="#3b322b"/></svg></div><h3>野々村 あお（架空）</h3><p>得意はショートと透明感カラー。髪の悩みは何でも聞かせてください。</p></div>
+      <div><div class="face"><svg viewBox="0 0 200 240" aria-hidden="true"><path d="M30 240c0-52 30-80 70-80s70 28 70 80z" fill="#a8927a"/><rect x="88" y="128" width="24" height="34" rx="10" fill="#ecdcc8"/><path d="M48 110c0-50 22-82 52-82s52 32 52 82c0 18-6 30-14 36H62c-8-6-14-18-14-36z" fill="#3b322b"/><ellipse cx="100" cy="100" rx="34" ry="40" fill="#efe2d0"/><path d="M64 92c4-34 22-50 44-50 20 0 32 14 34 34-22 0-50-6-62-22-4 14-10 28-16 38z" fill="#3b322b"/></svg></div><h3>野々村 りく（架空）</h3><p>メンズカットと髪質改善の担当。くせ毛を活かすカットが好きです。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="shop" class="shop">
+  <div class="wrap">
+    <p class="ttl"><span class="en">SHOP</span><small>店舗情報</small></p>
+    <div class="grid">
+      <dl>
+        <dt class="en">ADDRESS</dt><dd>埼玉県さいたま市〇〇区〇〇 4-5-6 2F（架空）</dd>
+        <dt class="en">OPEN</dt><dd>10:00〜19:00（最終受付 カット18:00）</dd>
+        <dt class="en">CLOSED</dt><dd>毎週火曜・第3水曜</dd>
+        <dt class="en">TEL</dt><dd><a href="#shop">000-0000-0000</a></dd>
+        <dt class="en">RESERVE</dt><dd>24時間WEB予約（予約サービスと連携）／LINEでも受付</dd>
+      </dl>
+      <div class="map" role="img" aria-label="地図のイメージ"></div>
+    </div>
+  </div>
+</section>
+
+<footer><span class="en">hair atelier NOA</span>（架空のお店）　|　制作：<a href="../../index.html">LUNA AI ATELIER</a></footer>
+<a class="fixed en" href="#shop">RESERVE</a>
+</body>
+</html>
