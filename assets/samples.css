@@ -56,7 +56,7 @@ h1, h2, h3 { font-family:var(--display); font-weight:600; overflow-wrap:anywhere
 [data-theme="jewelry"] .demo-hero::before { background:linear-gradient(90deg,#211923f8,#211923bf 36%,#2119234c 78%); }
 [data-theme="children"] .demo-hero::before, [data-theme="seniors"] .demo-hero::before { background:linear-gradient(90deg,#1c3027f5,#1c3027cb 36%,#1c302751 82%); }
 [data-theme="flowers"] .demo-hero::before { background:linear-gradient(90deg,#35232cf8,#35232cbf 36%,#35232c44 78%); }
-[data-theme="roofing"] .demo-hero { --hero-position:70% 40%; }
+[data-theme="roofing"] .demo-hero { --hero-position:center 14%; --mobile-position:68% center; }
 [data-theme="jewelry"] .demo-hero { --hero-position:68% 54%; }
 [data-theme="children"] .demo-hero { --hero-position:70% 54%; }
 [data-theme="flowers"] .demo-hero { --hero-position:68% 45%; }

@@ -10,7 +10,7 @@ Existing sample screenshots remain the original project's assets.
 
 ## 制作サンプルの写真
 [Pexels License](https://www.pexels.com/license/) のストック写真を使用しています。写真は各事業や施設の実績・関係者を示すものではありません。
-- `roof-craft.jpg` — [Pexels 9431615](https://www.pexels.com/photo/9431615/)
+- `roof-exterior.jpg` — [Pexels 33039011](https://www.pexels.com/photo/modern-house-roof-in-sunlight-with-shadows-33039011/)
 - `roof-team.jpg` — [Pexels 15806960](https://www.pexels.com/photo/15806960/)
 - `roof-home.jpg` — [Pexels 186077](https://www.pexels.com/photo/186077/)
 - `roof-detail.jpg` — [Pexels 12861862](https://www.pexels.com/photo/12861862/)
