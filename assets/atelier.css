@@ -142,3 +142,33 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 @media(prefers-reduced-motion:reduce) {
   .journal-photo img, .portfolio-photo img { transition:none; }
 }
+
+.contact-layout {
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);
+  align-items:start;
+  gap:clamp(25px,5vw,68px);
+  padding-block:clamp(64px,8vw,100px);
+}
+#contact .contact-layout .contact { padding:0; min-width:0; }
+.contact-profile {
+  padding:clamp(20px,3vw,34px);
+  background:#102a35e8;
+  border:1px solid #fff3;
+  color:#edf0ee;
+}
+.contact-profile h3 {
+  font:500 clamp(1.24rem,2.2vw,1.55rem)/1.5 var(--atelier-serif);
+  color:#f2d8a9;
+  margin-bottom:18px;
+}
+.contact-profile dl div {
+  border-top:1px solid #fff3;
+  padding-block:11px;
+}
+.contact-profile dt { color:#fff; font-weight:700; font-size:.875rem; }
+.contact-profile dd { margin:4px 0 0; font-size:.94rem; }
+.contact-profile a { display:inline-block; margin-top:13px; color:#f2d8a9; text-underline-offset:.25em; }
+@media(max-width:800px) {
+  .contact-layout { grid-template-columns:minmax(0,1fr); row-gap:36px; }
+}
