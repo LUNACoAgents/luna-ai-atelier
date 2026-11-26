@@ -10,3 +10,8 @@
 ## 公開前のメモ
 - いまは全ページに `<meta name="robots" content="noindex">` が入っています（プレオープン）。検索に出してOKになったら、`index.html`・`column/`・`privacy.html` からこの行を消し、サーチコンソールに `sitemap.xml` を送信します。
 - `works/` のサンプルは架空のお店なので、noindex のままにしておきます。
+
+## 独自ドメイン
+- 公開先は `https://atelier.lunaaiagents.com/`（`CNAME` ファイルで指定）。
+- DNS（Cloudflare）に `atelier` → `lunacoagents.github.io` の CNAME レコード（プロキシはオフ＝DNSのみ）を入れてから、この設定を main に入れます。
+- 旧URL `https://lunacoagents.github.io/luna-ai-atelier/` は GitHub が新しいドメインへ自動で転送します。
