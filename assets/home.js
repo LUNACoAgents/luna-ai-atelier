@@ -41,3 +41,23 @@
   }
 })();
 
+
+const contactAddress = document.querySelector('#contact-address');
+const copyContact = document.querySelector('#copy-contact');
+const copyStatus = document.querySelector('#copy-contact-status');
+if (contactAddress && copyContact && copyStatus) {
+  copyContact.hidden = false;
+  copyContact.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(contactAddress.textContent.trim());
+      copyStatus.textContent = 'メールアドレスをコピーしました。';
+    } catch {
+      const selection = window.getSelection();
+      const range = document.createRange();
+      range.selectNodeContents(contactAddress);
+      selection.removeAllRanges();
+      selection.addRange(range);
+      copyStatus.textContent = 'アドレスを選択しました。手動でコピーしてください。';
+    }
+  });
+}

@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://atelier.lunaaiagents.com/">
 <meta property="og:image" content="https://atelier.lunaaiagents.com/assets/img/ogp.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b1a2b'/%3E%3Cpath d='M20 6a10 10 0 1 0 7 15A8 8 0 0 1 20 6' fill='%23e4c48a'/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="assets/img/investclub-moon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
@@ -25,8 +25,9 @@
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"LUNA AI ATELIER","url":"https://atelier.lunaaiagents.com/","description":"さいたま市・大宮周辺の小さなお店・個人事業者向けのホームページ制作、リール動画制作、チラシ制作。","email":"atelier@lunaaiagents.com","areaServed":["さいたま市","大宮","東大宮"],"priceRange":"¥15,000〜¥100,000",
 "makesOffer":[{"@type":"Offer","name":"ホームページ制作パッケージ","price":"100000","priceCurrency":"JPY"},{"@type":"Offer","name":"保守スタンダード（月額）","price":"10000","priceCurrency":"JPY"}]}
 </script>
-<link rel="stylesheet" href="assets/home.css?v=20261127-hero">
-<script src="assets/home.js?v=20261127" defer></script>
+<link rel="stylesheet" href="assets/home.css?v=20261127-portfolio">
+<link rel="stylesheet" href="assets/atelier.css?v=20261127">
+<script src="assets/home.js?v=20261127-portfolio" defer></script>
 </head>
 <body class="atelier-home">
 <a class="skip-link" href="#main">本文へ移動</a>
@@ -34,13 +35,14 @@
 <header class="nav">
   <div class="wrap">
     <a class="logo" href="./" aria-label="LUNA AI ATELIER ホーム"><img class="brand-mark" src="assets/img/investclub-moon.svg" alt="" width="40" height="40"><span class="brand-word">LUNA AI <span>ATELIER</span></span></a>
-    <ul>
+    <nav aria-label="サイトメニュー"><ul>
       <li><a href="#works">制作サンプル</a></li>
       <li><a href="#price">料金</a></li>
+      <li><a href="#faq">よくある質問</a></li>
       <li><a href="#maker">つくる人</a></li>
       <li class="keep"><a href="column/">コラム</a></li>
       <li class="keep"><a class="cta" href="#contact">無料相談</a></li>
-    </ul>
+    </ul></nav>
   </div>
 </header>
 
@@ -69,22 +71,34 @@
 
 <section id="works">
   <div class="wrap">
-    <div class="editorial-head"><div><p class="kicker">SELECTED SAMPLES</p><h2 class="sec">お店の数だけ、<br>デザインがある。</h2></div><p class="lead">業種ごとに、実際にお作りする内容のサンプルを用意しました。スマホでも開いてみてください。</p></div>
-    <div class="works">
-      <a class="work" href="works/sekkotsu/">
-        <div class="ph"><div class="browser-top" aria-hidden="true"></div><img src="assets/img/sekkotsu-pc.jpg" alt="こもれび整骨院のサンプルサイト" width="1280" height="800" loading="lazy"></div>
-        <div class="tx"><p class="ind">整骨院・治療院</p><h3>こもれび整骨院</h3><p>やさしい色と丸い文字で、初めての人の不安をほどくデザイン。電話とWEB予約を画面下に固定。</p><p class="go">サンプルを見る</p></div>
+    <div class="editorial-head"><div><p class="kicker">SELECTED SAMPLES</p><h2 class="sec">制作サンプル</h2></div><p class="lead">工事会社や飲食店、NPOなど、業種に合わせたホームページを6例ご覧いただけます。</p></div>
+    <div class="works portfolio-grid">
+      <a class="work portfolio-card" href="works/bankin/">
+        <div class="portfolio-photo"><img src="assets/img/portfolio/roof-craft.jpg" alt="" loading="lazy" decoding="async"></div>
+        <div class="tx"><p class="ind">工事関係</p><h3>あさひ屋根板金</h3><p>施工写真、工期や費用の見せ方から見積りへの導線まで。</p><p class="go">サンプルを見る</p></div>
       </a>
-      <a class="work" href="works/salon/">
-        <div class="ph"><div class="browser-top" aria-hidden="true"></div><img src="assets/img/salon-pc.jpg" alt="hair atelier NOAのサンプルサイト" width="1280" height="800" loading="lazy"></div>
-        <div class="tx"><p class="ind">美容室・サロン</p><h3>hair atelier NOA</h3><p>余白と明朝体で、プライベートサロンの空気感を伝えるデザイン。Instagramや予約サービスと連携。</p><p class="go">サンプルを見る</p></div>
+      <a class="work portfolio-card" href="works/restaurant/">
+        <div class="portfolio-photo"><img src="assets/img/portfolio/dining-room.jpg" alt="" loading="lazy" decoding="async"></div>
+        <div class="tx"><p class="ind">飲食店</p><h3>季節の食卓 ひと匙</h3><p>店内と料理の写真、お品書きの切り替え、予約案内。</p><p class="go">サンプルを見る</p></div>
       </a>
-      <a class="work" href="works/bankin/">
-        <div class="ph"><div class="browser-top" aria-hidden="true"></div><img src="assets/img/bankin-pc.jpg" alt="あさひ屋根板金のサンプルサイト" width="1280" height="800" loading="lazy"></div>
-        <div class="tx"><p class="ind">屋根・外壁・リフォーム</p><h3>あさひ屋根板金</h3><p>「無料点検」と電話番号を大きく。施工事例に費用と工期を載せて、問い合わせにつなげる構成。</p><p class="go">サンプルを見る</p></div>
+      <a class="work portfolio-card" href="works/jewelry/">
+        <div class="portfolio-photo"><img src="assets/img/portfolio/jewel-hero.jpg" alt="" loading="lazy" decoding="async"></div>
+        <div class="tx"><p class="ind">宝石・ジュエリー</p><h3>澄石ジュエリー</h3><p>素材の質感を伝える写真、コレクションの分類、来店相談。</p><p class="go">サンプルを見る</p></div>
+      </a>
+      <a class="work portfolio-card" href="works/children-npo/">
+        <div class="portfolio-photo"><img src="assets/img/portfolio/kids-hero.jpg" alt="" loading="lazy" decoding="async"></div>
+        <div class="tx"><p class="ind">障害のある子どもの支援・NPO</p><h3>NPO法人 こもれびの輪</h3><p>活動内容、見学の手順、よくある質問を家族が探しやすい構成。</p><p class="go">サンプルを見る</p></div>
+      </a>
+      <a class="work portfolio-card" href="works/senior-npo/">
+        <div class="portfolio-photo"><img src="assets/img/portfolio/senior-hero.jpg" alt="" loading="lazy" decoding="async"></div>
+        <div class="tx"><p class="ind">高齢者の通所支援・NPO</p><h3>NPO法人 日だまりの家</h3><p>一日の過ごし方と見学の流れを、読みやすく整理。</p><p class="go">サンプルを見る</p></div>
+      </a>
+      <a class="work portfolio-card" href="works/florist/">
+        <div class="portfolio-photo"><img src="assets/img/portfolio/flower-shop.jpg" alt="" loading="lazy" decoding="async"></div>
+        <div class="tx"><p class="ind">花屋・小売店</p><h3>花店 余白</h3><p>季節の花、ギフト、ワークショップを一つのページで紹介。</p><p class="go">サンプルを見る</p></div>
       </a>
     </div>
-    <p class="works-note">※お店・住所・料金はすべて架空です。ホームページ制作パッケージ（10万円）で、この内容までお作りします。</p>
+    <p class="works-note">各サイトは架空の事業を題材にした制作サンプルです。掲載写真はイメージです。</p>
   </div>
 </section>
 
@@ -184,7 +198,7 @@
         <span class="tag2">いちばん人気</span>
         <h3>ホームページ制作パッケージ</h3>
         <div class="amt">100,000円<small>（税込）</small></div>
-        <p>制作サンプルと同じ内容・品質のサイトを、公開まで一式でお作りします。追加費用がかからない「コミコミ」価格です。</p>
+        <p>下記の内容を、ホームページの制作から公開まで一式でお作りします。ページ数や予約などの機能については、事前のお見積りでご案内します。</p>
       </div>
       <div class="r">
         <ul>
@@ -215,6 +229,7 @@
       </div>
     </div>
     <p class="tax">表示価格はすべて税込です。現在は免税事業者のため消費税はいただいておりませんが、インボイス登録（適格請求書発行事業者）となった際には、消費税を別途申し受けます。独自ドメインの取得・設定は実費＋5,000円です。</p>
+    <p class="more-col"><a class="btn btn-line" href="#faq">よくある質問を見る</a></p>
   </div>
 </section>
 
@@ -242,7 +257,9 @@
     <details><summary>予約や通販はできますか？</summary><p>できます。サイト本体は安全な静的サイトのまま、予約は予約サービス（Airリザーブなど）、通販はBASE・STORESなどの専門サービスと組み合わせます。</p></details>
     <details><summary>連絡や対応の時間は？</summary><p>ご連絡はメール・チャットが中心で、対応は平日夜と土日が中心です。勤務先の許可を得て活動しており、納期は事前に必ずお約束します。</p></details>
     <details><summary>補助金は使えますか？</summary><p>小規模事業者持続化補助金など、ホームページ制作が対象になり得る制度があります。条件は公募ごとに変わるため、最新情報を一緒に確認しましょう。※申請手続きの代行や税務相談は行っていません。</p></details>
-    <details><summary>どこまで対応していますか？</summary><p>さいたま市・大宮・東大宮周辺は対面でのお打ち合わせも可能です。それ以外の地域もオンラインで対応します。</p></details></div>
+    <details><summary>どこまで対応していますか？</summary><p>さいたま市・大宮・東大宮周辺は対面でのお打ち合わせも可能です。それ以外の地域もオンラインで対応します。</p></details>
+      <details><summary>メールアプリが開かないときは？</summary><p><a href="#contact">お問い合わせ欄</a>でメールアドレスをコピーし、普段お使いのメールサービスやアプリの宛先に貼り付けてください。</p></details>
+    </div>
   </div>
 </section>
 
@@ -267,8 +284,10 @@
       <p class="kicker">LET'S CREATE SOMETHING.</p>
       <h2>まずは、気軽にご相談ください</h2>
       <p>「こんなの作れる？」「だいたいいくら？」だけでも大丈夫です。お店のこれからを、一緒に形にしましょう。</p>
-      <a class="btn btn-gold" href="mailto:atelier@lunaaiagents.com?subject=%E3%81%94%E7%9B%B8%E8%AB%87%EF%BC%88%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E5%88%B6%E4%BD%9C%EF%BC%89">メールで相談する</a>
-      <p class="mail">メールアプリが開かない場合は：<b>atelier@lunaaiagents.com</b></p>
+      <a class="btn btn-gold" href="mailto:atelier@lunaaiagents.com?subject=%E3%81%94%E7%9B%B8%E8%AB%87%EF%BC%88%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E5%88%B6%E4%BD%9C%EF%BC%89">メールアプリを開く</a>
+      <p class="mail">メールアプリが開かない場合は、普段使うメールの宛先に貼り付けてください。</p>
+      <div class="contact-copy"><b id="contact-address">atelier@lunaaiagents.com</b><button type="button" id="copy-contact" hidden>アドレスをコピー</button></div>
+      <p class="copy-status" id="copy-contact-status" role="status"></p>
       <div class="tmpl"><b>書いていただけるとスムーズです</b><br>・お店の名前と業種<br>・作りたいもの（ホームページ／リール／チラシ）<br>・いまのサイトやSNSがあればそのURL<br>・ご希望の時期</div>
     </div>
   </div>
