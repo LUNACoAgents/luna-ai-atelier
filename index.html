@@ -26,6 +26,8 @@
 </script>
 <link rel="stylesheet" href="assets/home.css?v=20261128-studio">
 <link rel="stylesheet" href="assets/atelier.css?v=20261127-contact">
+<link rel="stylesheet" href="assets/gallery.css?v=20261128">
+<script src="assets/gallery.js?v=20261128" defer></script>
 <script src="assets/home.js?v=20261127-portfolio" defer></script>
 </head>
 <body class="atelier-home">
@@ -58,10 +60,28 @@
       </div>
     </div>
   </div>
-  <picture class="hero-photo">
-    <source media="(max-width: 850px)" srcset="assets/img/atelier-hero-studio-mobile.jpg" width="1050" height="700">
-    <img src="assets/img/atelier-hero-studio.jpg" alt="" width="1536" height="1024" fetchpriority="high" decoding="async">
-  </picture>
+  <div class="hero-deck" aria-hidden="true">
+    <picture class="hero-photo is-active" data-scene="studio">
+      <source media="(max-width: 850px)" srcset="assets/img/atelier-hero-studio-mobile.jpg" width="1050" height="700">
+      <img src="assets/img/atelier-hero-studio.jpg" alt="" width="1536" height="1024" fetchpriority="high" decoding="async">
+    </picture>
+    <template data-photo="dining"><picture class="hero-photo" data-scene="dining"><img src="assets/img/gallery/gallery-dining.jpg" alt="" decoding="async" fetchpriority="low"></picture></template>
+    <template data-photo="architecture"><picture class="hero-photo" data-scene="architecture"><img src="assets/img/gallery/gallery-architecture.jpg" alt="" decoding="async" fetchpriority="low"></picture></template>
+    <template data-photo="jewelry"><picture class="hero-photo" data-scene="jewelry"><img src="assets/img/gallery/gallery-jewelry.jpg" alt="" decoding="async" fetchpriority="low"></picture></template>
+    <template data-photo="flowers"><picture class="hero-photo" data-scene="flowers"><img src="assets/img/gallery/gallery-flowers.jpg" alt="" decoding="async" fetchpriority="low"></picture></template>
+  </div>
+  <div class="hero-controls" role="group" aria-label="トップ写真の切り替え" hidden>
+    <div class="hero-options">
+      <button type="button" data-select-scene="studio" aria-pressed="true">制作風景</button>
+      <button type="button" data-select-scene="dining" aria-pressed="false">飲食店</button>
+      <button type="button" data-select-scene="architecture" aria-pressed="false">建築</button>
+      <button type="button" data-select-scene="jewelry" aria-pressed="false">宝飾</button>
+      <button type="button" data-select-scene="flowers" aria-pressed="false">花屋</button>
+    </div>
+    <button class="hero-play" type="button" aria-label="写真の自動切り替えを一時停止"></button>
+    <div class="hero-progress" aria-hidden="true"><span></span></div>
+    <p class="gallery-status" role="status"></p>
+  </div>
 </section>
 <div class="stats-bar"><div class="wrap"><div class="stats"><p class="stats-intro">想いに、手の届くデザインを。<small>Good design, close to you.</small></p>
         <div class="stat"><div class="num">10<small>万円</small></div><div class="lbl">ホームページ制作<br>コミコミ・税込</div></div>
@@ -145,7 +165,17 @@
   </div>
 </section>
 
-<div class="photo-story"><img src="assets/img/atelier-cafe.jpg" alt="" width="2200" height="3300" loading="lazy"><div><div class="story-en" aria-hidden="true">Your story, beautifully told.</div><p>いいお店には、伝えたい物語がある。</p></div></div>
+<div class="photo-story gallery-interlude">
+  <div class="gallery-interlude-grid" aria-hidden="true">
+    <img src="assets/img/gallery/gallery-dining-evening.jpg" alt="" loading="lazy" decoding="async">
+    <img src="assets/img/gallery/gallery-jewelry.jpg" alt="" loading="lazy" decoding="async">
+    <img src="assets/img/gallery/gallery-flowers.jpg" alt="" loading="lazy" decoding="async">
+  </div>
+  <div class="gallery-interlude-copy">
+    <p>いいお店には、伝えたい物語がある。</p>
+    <a class="btn btn-ghost" href="#works">制作サンプルを見る</a>
+  </div>
+</div>
 
 <section id="why">
   <div class="wrap">
@@ -158,7 +188,7 @@
     </div>
 
     <div class="maker" id="maker">
-      <div class="maker-visual"><img src="assets/img/design-desk.jpg" width="1100" height="733" alt="ノートに構成を描く制作イメージ" loading="lazy"><span aria-hidden="true">Thoughtfully, together.</span></div>
+      <div class="maker-visual"><img src="assets/img/gallery/gallery-worktable.jpg" alt="色見本と紙を広げたデザインの作業台" loading="lazy" decoding="async"></div>
       <div class="maker-copy">
         <h3><small>ABOUT</small>つくる人について</h3>
         <p>企業コンサルタントとして20年、経営・会計の実務に携わってきました。工事会社、飲食店、宝飾店、サービス業の事業者から、NPO法人、一般社団法人、弁護士、大学教授、個人事業主まで、さまざまな分野の方と仕事をしてきました。</p>

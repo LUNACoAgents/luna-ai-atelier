@@ -40,3 +40,11 @@ Existing sample screenshots remain the original project's assets.
 ### 生成プロンプト
 
 Use case: photorealistic-natural. Asset: the main website hero photograph for LUNA AI ATELIER, an independent Japanese studio making websites for small businesses. Generate one wide landscape editorial photograph, about 3:2. A refined Japanese creative studio at dusk: a single thin, open charcoal laptop and an upright slim smartphone on a dark walnut worktable. On their screens, a coordinated, realistic finished boutique website mockup: quiet cream-and-olive layout, a large photograph of a sunlit Japanese storefront, finely aligned simple columns, and abstract short lines in place of any lettering. A few understated paper samples and a brass architect’s scale in the foreground suggest graphic design. Include a soft pool of amber window light and gently out-of-focus vertical timber or plaster through the window on the right. The laptop, phone and warm window are the clear visual focus, centered within the right 55% of the frame, with the entire laptop screen inside x=48–88%. Left 44% is deep ink-navy shadow and softly textured wall, calm, dark and mostly empty for large white Japanese HTML text. The strongest warm highlights are on the right, away from the text space. Lighting has clean deep shadows, tactile texture and subtle film grain; the scene is calm and plausible, art-directed magazine photography with restrained color. Natural perspective, warm amber highlights, ink navy and espresso palette. No people, no portraits, no visible brand logos, no readable text, no watermark, no floating interface cards, no futuristic effects, no exaggerated bloom.
+
+## トップギャラリーの写真
+- `gallery-dining.jpg` — [Pexels 31910449](https://www.pexels.com/photo/31910449/)
+- `gallery-architecture.jpg` — [Pexels 37025451](https://www.pexels.com/photo/37025451/)
+- `gallery-jewelry.jpg` — [Pexels 29522525](https://www.pexels.com/photo/29522525/)
+- `gallery-flowers.jpg` — [Pexels 29190263](https://www.pexels.com/photo/29190263/)
+- `gallery-worktable.jpg` — [Pexels 8367791](https://www.pexels.com/photo/8367791/)
+- `gallery-dining-evening.jpg` — [Pexels 36092417](https://www.pexels.com/photo/36092417/)
