@@ -33,3 +33,10 @@ Existing sample screenshots remain the original project's assets.
 - `flower-shop.jpg` — [Pexels 5414034](https://www.pexels.com/photo/5414034/)
 - `flower-bouquet.jpg` — [Pexels 5750159](https://www.pexels.com/photo/5750159/)
 - `flower-workshop.jpg` — [Pexels 6764314](https://www.pexels.com/photo/6764314/)
+
+## トップのメインビジュアル
+`atelier-hero-studio.jpg` と `atelier-hero-studio-mobile.jpg` は ImageGen で生成したイメージです。画面内の店舗サイトはデザインのイメージです。
+
+### 生成プロンプト
+
+Use case: photorealistic-natural. Asset: the main website hero photograph for LUNA AI ATELIER, an independent Japanese studio making websites for small businesses. Generate one wide landscape editorial photograph, about 3:2. A refined Japanese creative studio at dusk: a single thin, open charcoal laptop and an upright slim smartphone on a dark walnut worktable. On their screens, a coordinated, realistic finished boutique website mockup: quiet cream-and-olive layout, a large photograph of a sunlit Japanese storefront, finely aligned simple columns, and abstract short lines in place of any lettering. A few understated paper samples and a brass architect’s scale in the foreground suggest graphic design. Include a soft pool of amber window light and gently out-of-focus vertical timber or plaster through the window on the right. The laptop, phone and warm window are the clear visual focus, centered within the right 55% of the frame, with the entire laptop screen inside x=48–88%. Left 44% is deep ink-navy shadow and softly textured wall, calm, dark and mostly empty for large white Japanese HTML text. The strongest warm highlights are on the right, away from the text space. Lighting has clean deep shadows, tactile texture and subtle film grain; the scene is calm and plausible, art-directed magazine photography with restrained color. Natural perspective, warm amber highlights, ink navy and espresso palette. No people, no portraits, no visible brand logos, no readable text, no watermark, no floating interface cards, no futuristic effects, no exaggerated bloom.

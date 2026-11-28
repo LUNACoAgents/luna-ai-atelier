@@ -19,13 +19,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
-<link rel="preload" as="image" href="assets/img/cafe-wide.jpg" fetchpriority="high">
 <meta name="theme-color" content="#102a35">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"LUNA AI ATELIER","url":"https://atelier.lunaaiagents.com/","description":"さいたま市・大宮周辺の小さなお店・個人事業者向けのホームページ制作、リール動画制作、チラシ制作。","email":"atelier@lunaaiagents.com","areaServed":["さいたま市","大宮","東大宮"],"priceRange":"¥15,000〜¥100,000",
 "makesOffer":[{"@type":"Offer","name":"ホームページ制作パッケージ","price":"100000","priceCurrency":"JPY"},{"@type":"Offer","name":"保守スタンダード（月額）","price":"10000","priceCurrency":"JPY"}]}
 </script>
-<link rel="stylesheet" href="assets/home.css?v=20261127-portfolio">
+<link rel="stylesheet" href="assets/home.css?v=20261128-studio">
 <link rel="stylesheet" href="assets/atelier.css?v=20261127-contact">
 <script src="assets/home.js?v=20261127-portfolio" defer></script>
 </head>
@@ -47,9 +46,7 @@
 </header>
 
 <main id="main">
-<section class="hero" style="padding:0" aria-label="小さなお店のための制作アトリエ">
-  <div class="hero-photo" aria-hidden="true"><img src="assets/img/cafe-wide.jpg" alt="" width="2200" height="1306" fetchpriority="high"></div>
-  <div class="hero-light" aria-hidden="true"></div>
+<section class="hero" aria-label="小さなお店のための制作アトリエ">
   <div class="wrap">
     <div class="hero-copy">
       <span class="badge">さいたま・大宮の小さなお店へ</span>
@@ -60,8 +57,11 @@
         <a class="btn btn-ghost" href="#works">サンプルを見る</a>
       </div>
     </div>
-    <div class="hero-bottom"><p>WEB DESIGN / REELS / GRAPHIC<br>SAITAMA, JAPAN</p><a class="scroll-cue" href="#works">SCROLL TO EXPLORE</a></div>
   </div>
+  <picture class="hero-photo">
+    <source media="(max-width: 850px)" srcset="assets/img/atelier-hero-studio-mobile.jpg" width="1050" height="700">
+    <img src="assets/img/atelier-hero-studio.jpg" alt="" width="1536" height="1024" fetchpriority="high" decoding="async">
+  </picture>
 </section>
 <div class="stats-bar"><div class="wrap"><div class="stats"><p class="stats-intro">想いに、手の届くデザインを。<small>Good design, close to you.</small></p>
         <div class="stat"><div class="num">10<small>万円</small></div><div class="lbl">ホームページ制作<br>コミコミ・税込</div></div>
